@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style1.css"> -->
+    <link rel="stylesheet" href="./calc.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result" name="number" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" id="AC" value="c" onclick="clr()">AC</button></td>
+                <td><button type="button" id="PM" value="+/-" onclick="dis('+/-')"
+                        onkeydown="myFunction(event)">+/-</button></td>
+                <td><button type="button" id="percentage" value="%" onclick="percentage()">%</button></td>
+                <td><button type="button" id="div" value="/" onclick="dis('/')" onkeydown="myFunction(event)">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" id="seven" value="7" onclick="dis('7')"
+                        onkeydown="myFunction(event)">7</button></td>
+                <td><button type="button" id="eight" value="8" onclick="dis('8')"
+                        onkeydown="myFunction(event)">8</button></td>
+                <td><button type="button" id="nine" value="9" onclick="dis('9')"
+                        onkeydown="myFunction(event)">9</button></td>
+                <td><button type="button" id="mult" value="*" onclick="dis('*')"
+                        onkeydown="myFunction(event)">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="four" value="4" onclick="dis('4')"
+                        onkeydown="myFunction(event)">4</button></td>
+                <td><button type="button" id="five" value="5" onclick="dis('5')"
+                        onkeydown="myFunction(event)">5</button></td>
+                <td><button type="button" id="six" value="6" onclick="dis('6')" onkeydown="myFunction(event)">6</button>
+                </td>
+                <td><button type="button" id="minus" value="-" onclick="dis('-')"
+                        onkeydown="myFunction(event)">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="one" value="1" onclick="dis('1')" onkeydown="myFunction(event)">1</button>
+                </td>
+                <td><button type="button" id="two" value="2" onclick="dis('2')" onkeydown="myFunction(event)">2</button>
+                </td>
+                <td><button type="button" id="three" value="3" onclick="dis('3')"
+                        onkeydown="myFunction(event)">3</button></td>
+                <td><button type="button" id="plus" value="+" onclick="dis('+')"
+                        onkeydown="myFunction(event)">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button style="width: 110px;" type="button" id="zero" onclick="dis('0')"
+                        onkeydown="myFunction(event)">0</button></td>
+                <td><button type="button" id="dot" value="." onclick="dis('.')" onkeydown="myFunction(event)">.</button>
+                </td>
+                <td><button type="button" id="equal" value="=" onclick="solve()">=</button></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+<script src="./calcc.js"></script>
+
+</html>
