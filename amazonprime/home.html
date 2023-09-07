@@ -13,83 +13,195 @@
 <body>
     <div class="page">
         <!-- header -->
-        <header>
-            <ul>
-                <li class="logo"><a>prime video</a></li>
-                <li>
-                    <select>
-                        <option selected>Store</option>
-                        <option>All</option>
-                        <option>Rent</option>
-                        <option>Channel</option>
-                    </select>
-                </li>
-                <li>
-                    <select>
-                        <option selected>Store</option>
-                        <option>All</option>
-                        <option>Rent</option>
-                        <option>Channel</option>
-                    </select>
-                </li>
-                <li>Live TV</li>
-                <li>
-                    <select>
-                        <option>Categories</option>
-                        <optgroup label="Geners"></optgroup>
-                        <ul>
-                            <option>Action and Adventure</option>
-                            <option>Anime</option>
-                            <option>Comedy</option>
-                            <option>Documentry</option>
-                            <option>Drama</option>
-                            <option>Fentasy</option>
-                        </ul>
-                        <ul>
-                            <option>Horror</option>
-                            <option>International</option>
-                            <option>Kids</option>
-                            <option>Music video and conserts</option>
-                            <option>Mystery and thrillers</option>
-                            <option>Romance</option>
-                        </ul>
-                        <optgroup label="Featured collection"></optgroup>
-                        <ul>
-                            <option>Hindi</option>
-                            <option>English</option>
-                            <option>Telugu</option>
-                            <option>Tamli</option>
-                            <option>Malayalam</option>
-                        </ul>
-                        <ul>
-                            <option>Kannada</option>
-                            <option>Marathi</option>
-                            <option>Punjabi</option>
-                            <option>Gujarati</option>
-                            <option>Bengali</option>
-                        </ul>
-                    </select>
-                </li>
-                <li>
-                    <button class="search"><i class="fa fa-search"></i></button>
-                </li>
-                <li>
-                    try for free
-                </li>
-                <li>
-                    <Select>
-                        <option>EN</option>
-                        <option>EN</option>
-                        <option>EN</option>
-                        <option>EN</option>
-                        <option>EN</option>
-                        <option>EN</option>
-                        <option>EN</option>
-                        <option>EN</option>
-                    </Select>
-                </li>
-            </ul>
-        </header>
+        <div class="navbar">
+            <a><img src="./Logo-min.png" class="logo"></a>
+            <div class="dropdown">
+                <button class="dropbtn">Home
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">All</a>
+                    <a href="#">Movies</a>
+                    <a href="#">TV Shows</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Store
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">All</a>
+                    <a href="#">Rent</a>
+                    <a href="#">Channels</a>
+                </div>
+            </div>
+            <a href="#home">Live TV</a>
+            <div class="dropdown" style="width: 140px;">
+                <button class="dropbtn" style="width: 140px;">Categories
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row" style="width: 100%;">
+                        <div class="column" style="width:63% ;">
+                            <li><a href="#">Geners</a></li>
+                            <div class="row">
+                                <div class="column" style="width:47% ;">
+                                    <li><a href="#">Action and Adventures</a></li>
+                                    <li><a href="#">Anime</a></li>
+                                    <li><a href="#">Comedy</a></li>
+                                    <li><a href="#">Documentry</a></li>
+                                    <li><a href="#">Drama</a></li>
+                                    <li><a href="#">Fentasy</a></li>
+                                </div>
+                                <div class="column" style="width:54% ;">
+                                    <li><a href="#">Horrer</a></li>
+                                    <li><a href="#">Kids</a></li>
+                                    <li><a href="#">Music videos and conserts</a></li>
+                                    <li><a href="#">Mystery and thrillers</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Romance</a></li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="width:32% ;">
+                            <li><a href="#">Featured Collections</a></li>
+                            <div class="row">
+                                <div class="column">
+                                    <li><a href="#">Hindi</a></li>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Telugu</a></li>
+                                    <li><a href="#">Tamil</a></li>
+                                    <li><a href="#">Malayalam</a></li>
+                                </div>
+                                <div class="column">
+                                    <li><a href="#">Kannada</a></li>
+                                    <li><a href="#">Marathi</a></li>
+                                    <li><a href="#">Punjabi</a></li>
+                                    <li><a href="#">Gujarati</a></li>
+                                    <li><a href="#">Bengali</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#home" style="margin-left: 40px;"><i class="fa fa-search"></i></a>
+            <a href="#home">Try for free</a>
+            <div class="dropdown">
+                <button class="dropbtn">EN
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row" style="width: 100%;">
+                        <div class="column" style="width: 34%;">
+                            <li><a href="#">Bahasa Indonesia</a></li>
+                            <li><a href="#">Bahasa Melayu</a></li>
+                            <li><a href="#">Dansk</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Français</a></li>
+                            <li><a href="#">Español</a></li>
+                            <li><a href="#">Italiano</a></li>
+                        </div>
+                        <div class="column" style="width: 25%;">
+                            <li><a href="#">Magyar</a></li>
+                            <li><a href="#">Nederlands</a></li>
+                            <li><a href="#">Norsk</a></li>
+                            <li><a href="#">Polski</a></li>
+                            <li><a href="#">Português(Brasil)</a></li>
+                            <li><a href="#">Português(Portugal)</a></li>
+                            <li><a href="#">Română</a></li>
+                            <li><a href="#">Suomi</a></li>
+                        </div>
+                        <div class="column" style="width: 26%;">
+                            <li><a href="#">Svenska</a></li>
+                            <li><a href="#">Türkçe</a></li>
+                            <li><a href="#">Wikang Filipino</a></li>
+                            <li><a href="#">Čeština</a></li>
+                            <li><a href="#">Ελληνικά</a></li>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">עברית</a></li>
+                            <li><a href="#">العربية</a></li>
+                        </div>
+                        <div class="column" style="width: 22%;">
+                            <li><a href="#">हिन्दी</a></li>
+                            <li><a href="#">தமிழ்</a></li>
+                            <li><a href="#">తెలుగు</a></li>
+                            <li><a href="#">ไทย</a></li>
+                            <li><a href="#">日本語</a></li>
+                            <li><a href="#">简体中文</a></li>
+                            <li><a href="#">繁體中文</a></li>
+                            <li><a href="#">한국어</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#home"><i class="fa fa-user-circle-o" style="font-size: xx-large;"></i></a>
+        </div>
+        <div class="slider">
+            <div class="headingv">
+                <p>Movies</p>
+            </div>
+            <div class="sliderv">
+                <div class="image">
+                    <img src="./lambo.jpg"></img>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="pg"></button>
+                <button class="pg"></button>
+                <button class="pg"></button>
+                <button class="pg"></button>
+                <button class="pg"></button>
+                <button class="pg"></button>
+                <button class="pg"></button>
+                <button class="pg"></button>
+            </div>
+        </div>
+        <div class="cardcontain">
+            <div class="heading">
+                <p><b><span style="color: blue;font-size:large">prime</span><span class="tab"></span>Drama movies<span
+                            class="tab"></span>See more &nbsp;<i class="fa fa-chevron-right"></i></b></p>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+            </div>
+            <div class="heading">
+                <p><b><span style="color: blue;font-size:large">prime</span><span class="tab"></span>Drama movies<span
+                            class="tab"></span>See more  &nbsp;<i class="fa fa-chevron-right"></i></b></p>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+                <div class="card">
+                    <div class="card-container"><img src="./lambo.jpg"></img></div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
