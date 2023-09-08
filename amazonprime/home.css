@@ -399,3 +399,16 @@ body {
     font-size: xx-large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+@media screen and (max-width:1500px){
+    body{
+        background-color: darkslateblue;
+    }    
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color: lightskyblue;
+    }    
+}
+
