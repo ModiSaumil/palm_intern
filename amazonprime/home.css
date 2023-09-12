@@ -109,6 +109,7 @@ body {
     content: "";
     display: flex;
     clear: both;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -323,43 +324,153 @@ body {
     background-size: cover;
 }
 
-.cardog {
-    margin: 15px;
+.cardog,
+.cardog-1,
+.cardog-2,
+.cardog-3,
+.cardog-4,
+.cardog-5,
+.cardog-6,
+.cardog-7 {
+    margin: 10px;
     height: 450px;
     width: 320.5px;
     display: inline;
-    text-align: center;
+    text-align: left;
     border-radius: 15px;
-    background-image: url("./lambo.jpg");
+    /* background-image: url("./poster/avatar-2-the-way-of-water.jpg"); */
     background-size: cover;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 202px black;
     transition: 0.3s ease-in-out;
-    align-items: center;
-
+    align-items: left;
 }
 
-.cardog img {
+.cardog-1 {
+    background-image: url(./poster/the-lion-king.jpg);
+}
+
+.cardog-2 {
+    background-image: url(./poster/the-angry-birds-movie-2.jpg);
+}
+
+.cardog-3 {
+    background-image: url(./poster/the-flash.jpg);
+}
+
+.cardog-4 {
+    background-image: url(./poster/oppenheimer.jpg);
+}
+
+.cardog-5 {
+    background-image: url(./poster/venom.jpg);
+}
+.cardog-6 {
+    background-image: url(./poster/oppenheimer.jpg);
+}
+
+.cardog-7 {
+    background-image: url(./poster/venom.jpg);
+}
+
+.cardog,
+.cardog-1,
+.cardog-2,
+.cardog-3,
+.cardog-4,
+.cardog-5,
+.cardog-6,
+.cardog-7 img {
     width: 330px;
     height: 450px;
     border-radius: 15px;
 }
 
-.card-container .cardog:hover {
-    background-image: url("./tranformers.jpg");
+.card-container .cardog:hover,
+.cardog-1:hover {
+    background-image: url("./poster/the-lion-king.jpg");
     background-size: cover;
     width: 900px;
     transition: 0.3s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-container .cardog:hover img {
+.card-container .cardog:hover,
+.cardog-2:hover {
+    background-image: url("./poster/the-angry-birds-movie-2.jpg");
+    background-size: cover;
     width: 900px;
-    transition: ease-in;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-container .cardog .content {
+.card-container .cardog:hover,
+.cardog-3:hover {
+    background-image: url("./poster/the-flash.jpg");
+    background-size: cover;
+    width: 900px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container .cardog:hover,
+.cardog-4:hover {
+    background-image: url("./poster/oppenheimer.jpg");
+    background-size: cover;
+    width: 900px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container .cardog:hover,
+.cardog-5:hover {
+    background-image: url("./poster/venom.jpg");
+    background-size: cover;
+    width: 900px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.card-container .cardog:hover,
+.cardog-6:hover {
+    background-image: url("./poster/oppenheimer.jpg");
+    background-size: cover;
+    width: 900px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-container .cardog:hover,
+.cardog-7:hover {
+    background-image: url("./poster/venom.jpg");
+    background-size: cover;
+    width: 900px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container .cardog:hover,
+.cardog-1:hover,
+.cardog-2:hover,
+.cardog-3:hover,
+.cardog-4:hover,
+.cardog-5:hover,
+.cardog-6:hover,
+.cardog-7:hover,
+img {
+    width: 900px;
+    transition: 0.3s ease-in;
+}
+
+.card-container .cardog,
+.cardog-1 .content,
+.cardog-2 .content,
+.cardog-3 .content,
+.cardog-4 .content,
+.cardog-5 .content,
+.cardog-6 .content,
+.cardog-7 .content {
     margin-top: 220px;
     /* margin-left: 30px; */
     display: flex;
@@ -376,7 +487,14 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.card-container .cardog:hover .content {
+.card-container .cardog:hover,
+.cardog-1:hover .content,
+.cardog-2:hover .content,
+.cardog-3:hover .content,
+.cardog-4:hover .content,
+.cardog-5:hover .content,
+.cardog-6:hover .content,
+.cardog-7:hover .content {
     visibility: visible;
     opacity: 1;
     transition-delay: 0.3s;
@@ -525,7 +643,7 @@ body {
         display: inline;
         text-align: center;
         border-radius: 15px;
-        background-image: url(./lambo.jpg);
+        background-image: url(./poster/avatar-2-the-way-of-water.jpg);
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -564,7 +682,7 @@ body {
         margin-left: 0px;
     }
 
-    .logo{
+    .logo {
         width: 90px;
         /* margin-left: 15px; */
     }
@@ -617,7 +735,7 @@ body {
         border: none;
         outline: none;
         color: #aaa;
-        padding: 0px 0px; 
+        padding: 0px 0px;
         background-color: inherit;
         font-family: inherit;
         margin: 0;
@@ -657,11 +775,13 @@ body {
         flex-wrap: wrap;
         flex-direction: row;
     }
+
     .column {
         float: left;
         width: 50%;
         padding: 10px;
     }
+
     .card-container {
         padding: 0px;
         display: flex;
@@ -745,7 +865,7 @@ body {
         display: inline;
         text-align: center;
         border-radius: 15px;
-        background-image: url(./lambo.jpg);
+        background-image: url(./poster/avatar-2-the-way-of-water.jpg);
         background-size: cover;
         display: flex;
         flex-direction: column;
