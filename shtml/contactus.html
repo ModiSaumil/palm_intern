@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style1.css">
@@ -7,7 +8,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
 </head>
+
 <body>
-    
+    <div class="bgimg">
+        <div class="form">
+            <form method="post" enctype="multipart/form-data">
+                <fieldset style="width: auto;">
+                    <legend> Registration Form </legend>
+                    <table>
+                        <tr>
+                            <td class="td1">
+                                <label for="fname">First name : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="text" name="fname" placeholder="enter first name" required autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="lname">Last name : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="text" name="lname" placeholder="enter last name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="phonenum">Contact Number : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="number" name="contactnumber" placeholder="enter contact number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="emailid">Email id : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="email" name="emailid" placeholder="enter emailid" required autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="pass">Password : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="password" name="password" placeholder="enter password" required autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="add">Address : </label>
+                            </td>
+                            <td class="td2">
+                                <textarea style="height: 100px; width: 300px;" placeholder="enter address"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="city">City : </label>
+                            </td>
+                            <td class="td2">
+                                <select id="city" name="city">
+                                    <option value="surat">surat</option>
+                                    <option value="vadodra">vadodra</option>
+                                    <option value="ahemdavad">ahemdavad</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="hobby">Hobby : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="checkbox" name="hobby" id="cricket" value="cricekt">
+                                <label>Cricket</label>
+                                <input type="checkbox" name="hobby" id="online-games" value="online-games">
+                                <label>online-games</label>
+                                <input type="checkbox" name="hobby" id="photography" value="photography">
+                                <label>photography</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="gender">Gender : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label>male</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label>female</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="td1">
+                                <label for="birthdate">Birthdate : </label>
+                            </td>
+                            <td class="td2"><input type="date" id="bdate" value="birthdate">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="td1">
+                                <label for="time">Birth time : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="time" name="btime" id="btime">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="profilephot">Profile photo : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="file" name="myfile" id="myfile">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="giturl">Github : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="url" name="giturl" placeholder="enter github url">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td1">
+                                <button type="submit" name="submit" class="btn">Submit</button>
+                                <button type="reset" name="reset" class="btn">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

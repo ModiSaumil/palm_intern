@@ -112,6 +112,10 @@
     background-color: #f4d69b;
 }
 
+.bgimg {
+    background-color: #777;
+}
+
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
@@ -161,34 +165,44 @@ fieldset {
     padding: 1%;
 }
 
-input {
+label {
+    margin-right: 10px;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+input[type=url] {
     width: 15%;
     height: 25px;
     border-radius: 15px;
     border: none;
-    padding: 5px;
+    padding: 8px;
+    margin: 5px;
 }
 
 button {
-    width: 5%;
-    height: 20px;
+    width: 10%;
+    height: 30px;
     border-radius: 15px;
     background-color: #f4d69b;
     border: none;
+    padding: 8px;
 }
 
 textarea {
     border-radius: 15px;
     border: none;
-    padding: 5px;
+    padding: 8px;
 }
 
 select {
     width: 15%;
-    height: 25px;
+    height: 40px;
     border-radius: 15px;
     border: none;
-    padding: 5px;
+    padding: 8px;
 }
 
 table {
@@ -196,15 +210,40 @@ table {
     width: 100%;
 }
 
-th,
+tr {
+    width: 100%;
+    display: flex;
+}
+
 td {
     text-align: left;
     padding: 8px;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+.td2{
+    text-align: left;
+    padding: 8px;
+    width: 100%;
 }
+
+.btn{
+    width: 50%;
+    height: 30px;
+
+}
+
+.td1 {
+    font-size: larger;
+    display: flex;
+    width: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
 
 div.gallery {
     margin: 5px;
