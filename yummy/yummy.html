@@ -6,25 +6,416 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yummy</title>
     <link rel="stylesheet" href="yummy.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <navbar>
-            <ul class="nav">
-                <li style="margin-right: 500px;"><a style="font-size: x-large;font-weight: bolder;">Yummy.</a></li>
-                <li>Home</ll>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Event</li>
-                <li>Chefs</li>
-                <li>Dropdown&nbsp;<i class="fa fa-angle-down"></i></li>
-                <li>Contact</li>
-                <li style="margin-left: 500px;"><button id="book">Book Table</button></li>
-            </ul>
-        </navbar>
-    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yummy.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                style="justify-content: center;ALIGN-ITEMS: center;font-size: large;margin: 5px;"
+                id="navbarSupportedContent">
+                <ul class="nav nav-underline flex-md-wrap"
+                    style="text-decoration: none;font-size: 18px;color: grey !important;font-weight: bold;">
+                    <li class="nav-item" style="padding: 5px;">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item" style="padding: 5px;">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item" style="padding: 5px;">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item" style="padding: 5px;">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item" style="padding: 5px;">
+                        <a class="nav-link" href="#">Chef</a>
+                    </li>
+                    <li class="nav-item" style="padding: 5px;">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown" style="padding: 5px;">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Data 1</a></li>
+                            <li><a class="dropdown-item" href="#">Data 2</a></li>
+                            <li><a class="dropdown-item" href="#">Date 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="padding: 5px;">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-danger" style="border-radius: 25px;">Book a table</button>
+        </div>
+    </nav>
+
+    <section id="Home"
+        style="height:600px;background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
+        <div class="container">
+            <div class="row justify-content-between align-items-center align-content-center" style="flex-wrap: nowrap;">
+                <div class="flex-column justify-content-center align-items-center" style="width: 50%;">
+                    <h1>ENJOY YOUR HEALTHY
+                        <br>
+                        DELICIOUS FOOD
+                    </H1>
+                    <P style="font-size: large;">
+                        Send some one to pick-up your favourite ordered food.
+                        this can be <br> the best food in the world.
+                    </P>
+                    <button type="button" class="btn btn-danger"
+                        style="border-radius: 25px;height: 40px;width: 160px;">Book a Table</button>
+                    <button type="button" class="btn btn-outline-danger"
+                        style="border-radius: 25px;border: none;height: 40px;width: 160px;font-size: large"><i
+                            class="fa fa-play-circle-o" style="margin-right: 10px;"></i>Watch Video</button>
+                </div>
+                <div class="column justify-content-center align-items-center" style="width: 50%;display: flex;">
+                    <img src="./hero-img.png" alt="dish" style="height: 500px;width: 500px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="About"
+        style="height:fit-content;background-color: rgb(243, 243, 243);padding: 30px;display: flex; align-items: center;">
+        <div class="container ">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">h6. Bootstrap heading</p>
+                <h1 class="display-6">LEARN ABOUT US</h1>
+            </div>
+            <div class="flex-row" style="width: 100%;display: flex;">
+                <div class="col-8">
+                    <img src="./about.jpg" style="height: 730px;width: 780px;">
+                </div>
+                <div class="col-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                        </li>
+                    </ul>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident</p>
+                    <img src="./about-2.jpg" alt="img" style="height: 345px;width: 450px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why"
+        style="height:fit-content;background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
+        <div class="container" style="display: flex;">
+            <div class="col-4">
+                <div class="card text-lg-start mb-3"
+                    style="width: 25rem;height: 25rem;background-color: red;padding: 15px;color: white;">
+                    <div class="card-body">
+                        <h1 class="card-title">Why Choose <br> Yummy?</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            Asperiores
+                            dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
+                            corporis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row" style="flex-wrap: nowrap;">
+                    <div class="card text-lg-start mb-3"
+                        style="width: 18rem;height: 23rem;background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                        <div class="card-body"
+                            style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                            <button
+                                style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
+                                    class="fa fa-bar-chart"></i></button>
+                            <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                            <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+                                nisi ut aliquip</p>
+                        </div>
+                    </div>
+                    <div class="card text-lg-start mb-3"
+                        style="width: 18rem;height: 23rem;background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                        <div class="card-body"
+                            style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                            <button
+                                style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
+                                    class="fa fa-diamond"></i></button>
+                            <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                            <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+                                nisi ut aliquip</p>
+                        </div>
+                    </div>
+                    <div class="card text-lg-start mb-3"
+                        style="width: 18rem;height: 23rem;background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                        <div class="card-body"
+                            style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                            <button
+                                style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
+                                    class="fa fa-inbox"></i></button>
+                            <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                            <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+                                nisi ut aliquip</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="data bgimg-1">
+        <div class="row" style="width: 100%;display: flex;background-color: black;opacity: 0.5;">
+            <div class="col-3">
+                <h1>232</h1>
+                <h3>Client</h3>
+            </div>
+            <div class="col-3">
+                <h1>521</h1>
+                <h3>Projects</h3>
+            </div>
+            <div class="col-3">
+                <h1>1453</h1>
+                <h3>Hours of Suppport</h3>
+            </div>
+            <div class="col-3">
+                <h1>32</h1>
+                <h3>Workers</h3>
+            </div>
+        </div>
+    </div>
+
+    <section id="Menu"
+        style="height:fit-content;background-color: rgb(255, 255, 255);padding: 30px;display: flex; align-items: center;">
+        <div class="container ">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">OUR MENU</p>
+                <h1 class="display-6">CHECK OUR YUMMY MENU</h1>
+                <UL class="nav nav-underline" style="font-size:x-large;">
+                    <li class="nav-item"><a class="nav-link ">Starter</a></li>
+                    <li class="nav-item"><a class="nav-link ">Breakfast</a></li>
+                    <li class="nav-item"><a class="nav-link ">Lunch</a></li>
+                    <li class="nav-item"><a class="nav-link ">Dinner</a></li>
+                </UL>
+                <br>
+                <p class="h6">MENU</p>
+                <h1 class="display-6">Starter</h1>
+                <div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="menu-item-1.png" class="card-img-top" alt="...">
+                                <div class="card-body dataa">
+                                    <h5 class="card-title">Magnam Tiste</h5>
+                                    <p class="card-text">Lorem, deren, trataro, filede, nerada</p>
+                                    <h4 class="card-title">$9.95</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="menu-item-2.png" class="card-img-top" alt="...">
+                                <div class="card-body dataa">
+                                    <h5 class="card-title">Aut Luia</h5>
+                                    <p class="card-text">Lorem, deren, trataro, filede, nerada</p>
+                                    <h4 class="card-title">$9.95</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="menu-item-3.png" class="card-img-top" alt="...">
+                                <div class="card-body dataa">
+                                    <h5 class="card-title">Est Eligendi</h5>
+                                    <p class="card-text">Lorem, deren, trataro, filede, nerada</p>
+                                    <h4 class="card-title">$9.95</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="menu-item-4.png" class="card-img-top" alt="...">
+                                <div class="card-body dataa">
+                                    <h5 class="card-title">Eos Luibusdam</h5>
+                                    <p class="card-text">Lorem, deren, trataro, filede, nerada</p>
+                                    <h4 class="card-title">$9.95</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="menu-item-5.png" class="card-img-top" alt="...">
+                                <div class="card-body dataa">
+                                    <h5 class="card-title">Eos Luibusdam</h5>
+                                    <p class="card-text">Lorem, deren, trataro, filede, nerada</p>
+                                    <h4 class="card-title">$9.95</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="menu-item-6.png" class="card-img-top" alt="...">
+                                <div class="card-body dataa">
+                                    <h5 class="card-title">Laboriosam Direva</h5>
+                                    <p class="card-text">Lorem, deren, trataro, filede, nerada</p>
+                                    <h4 class="card-title">$9.95</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials"
+        style="height:fit-content;background-color: rgb(216, 216, 216);padding: 30px;display: flex; align-items: center;">
+        <div class="container">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">TESTIMONIALS</p>
+                <h1 class="display-6">WHAT ARE THEY SAYING ABOUT US</h1>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-6">
+                                <p>
+                                    <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram
+                                    irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="fa fa-quote-right"></i>
+                                </p>
+                                <h4>Sara Wilsson</h4>
+                                <p class="h6">Designer</p>
+                                <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="./testimonials-2.jpg" class="d-block w-100" alt="..."
+                                    style="height: 200px;width: 200px;border-radius: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-6">
+                                <p>
+                                    <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram
+                                    irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="fa fa-quote-right"></i>
+                                </p>
+                                <h4>Saul Goodman</h4>
+                                <p class="h6">Ceo & Founder</p>
+                                <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="./testimonials-1.jpg" class="d-block w-100" alt="..."
+                                    style="height: 200px;width: 200px;border-radius: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-6">
+                                <p>
+                                    <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram
+                                    irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="fa fa-quote-right"></i>
+                                </p>
+                                <h4>Jena Karlis</h4>
+                                <p class="h6">Store Owner</p>
+                                <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="./testimonials-3.jpg" class="d-block w-100" alt="..."
+                                    style="height: 200px;width: 200px;border-radius: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-6">
+                                <p>
+                                    <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram
+                                    irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="fa fa-quote-right"></i>
+                                </p>
+                                <h4>John Larson</h4>
+                                <p class="h6">Entrepeneur</p>
+                                <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="./testimonials-4.jpg" class="d-block w-100" alt="..."
+                                    style="height: 200px;width: 200px;border-radius: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

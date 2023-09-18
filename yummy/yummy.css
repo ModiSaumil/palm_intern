@@ -3,30 +3,50 @@
     padding: 0;
 }
 
-.nav{
-    background-color: whitesmoke;
+.data {
+    padding: 0px;
+    width: 100%;
+    flex: 0 1 100%;
+    background-color: #f4d69b;
+}
+
+.bgimg {
+    background-color: #777;
+}
+
+.bgimg-1 {
     display: flex;
-    text-align: center;
     justify-content: center;
-    list-style: none;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./stats-bg.jpg");
+    min-height: 300px;
 }
 
-.nav li{
-    margin: 20px;
-}
-
-.nav li img{
-    height: 30px;
-}
-
-.nav li:hover{
-    text-decoration: underline red 5px ;
-}
-
-#book{
-    background-color: red;
+.col-3{
     color: white;
-    border-color: black;
-    border-radius: 20px;
-    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dataa{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    border: none !important;
+}
+
+.star
+{
+    color: gold;
 }
