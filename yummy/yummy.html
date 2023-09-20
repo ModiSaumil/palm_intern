@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yummy</title>
     <link rel="stylesheet" href="yummy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,13 +22,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./download.webp" style="width: 130px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse"
-                style="justify-content: center;ALIGN-ITEMS: center;font-size: large;margin: 5px;"
+            <div class="collapse navbar-collapse" style="justify-content: center;ALIGN-ITEMS: center;font-size: large;"
                 id="navbarSupportedContent">
                 <ul class="nav nav-underline flex-md-wrap"
                     style="text-decoration: none;font-size: 18px;color: grey !important;font-weight: bold;">
@@ -62,14 +59,19 @@
                 </ul>
             </div>
             <button type="button" class="btn btn-danger" style="border-radius: 25px;">Book a table</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
     <!-- home -->
-    <section id="Home"
-        style="height:600px;background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
+    <section id="Home" style="background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
         <div class="container">
-            <div class="row justify-content-between align-items-center align-content-center" style="flex-wrap: nowrap;">
-                <div class="flex-column justify-content-center align-items-center" style="width: 50%;">
+            <div class="row justify-content-between align-items-center align-content-center ">
+                <div
+                    class="col-md-12 col-lg-7 flex-column justify-content-center align-items-center align-items-lg-start text-center">
                     <h1>ENJOY YOUR HEALTHY
                         <br>
                         DELICIOUS FOOD
@@ -83,9 +85,12 @@
                     <button type="button" class="btn btn-outline-danger"
                         style="border-radius: 25px;border: none;height: 40px;width: 160px;font-size: large"><i
                             class="fa fa-play-circle-o" style="margin-right: 10px;"></i>Watch Video</button>
+                    <br>
+                    <br>
                 </div>
-                <div class="column justify-content-center align-items-center" style="width: 50%;display: flex;">
+                <div class="col-sm-12 col-md-auto col-lg-5 justify-content-center align-items-center h-100">
                     <img src="./hero-img.png" alt="dish" style="height: 100%;width: 100%;">
+                    <br>
                 </div>
             </div>
         </div>
@@ -112,15 +117,39 @@
 
                         </div>
                         <div class="row">
-                            <ul>
-                                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
-                                    pariatur.
-                                </li>
+                            <ul style="list-style: none;">
+                                <div class="row">
+                                    <div class="col-1 col-md-1"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11">
+                                        <p>
+                                            Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 col-md-1"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11">
+                                        <p>
+                                            Duis aute irure dolor in reprehenderit in voluptate velit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 col-md-1"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11">
+                                        <p>
+                                            Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Duis aute irure dolor in
+                                            reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat
+                                            nulla
+                                            pariatur.
+                                        </p>
+                                    </div>
+                                </div>
                             </ul>
-
                         </div>
                         <div class="row">
                             <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -138,15 +167,14 @@
         </div>
     </section>
     <!-- why -->
-    <section id="why"
-        style="height:fit-content;background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
+    <section id="why" style="background-color: rgb(221, 221, 221);display: flex; align-items: center;">
         <div class="container" style="display: flex;">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="card text-lg-start mb-3"
-                        style="width: 100%;background-color: red;padding: 15px;color: white;">
+                        style="width: 100%;background-color: red;padding: 15px;color: white; height: 100%;">
                         <div class="card-body">
-                            <h1 class="card-title">Why Choose <br> Yummy?</h1>
+                            <h2 class="card-title">Why Choose <BR> Yummy?</h2>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                 tempor
                                 incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
@@ -160,8 +188,8 @@
                 </div>
                 <div
                     class="col-sm-12 col-md-12 col-lg-8 align-content-center justify-content-center align-items-center">
-                    <div class="row" style="flex-wrap: wrap;">
-                        <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="row why" style="flex-wrap: wrap;">
+                        <div class="col-sm-12 col-md-12 col-lg-4 justify-content-center">
                             <div class="card text-lg-start ms-auto"
                                 style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
                                 <div class="card-body"
@@ -213,29 +241,31 @@
         </div>
     </section>
     <!-- data -->
-    <div class="container-fluid">
-        <div class="data bgimg-1">
-            <div class="row"
-                style="width: 100%;display: flex;background-color: black;opacity: 0.5;justify-content: center;align-items: center;">
-                <div class="col-sm-3">
-                    <h1>232</h1>
-                    <h3>Client</h3>
-                </div>
-                <div class="col-sm-3">
-                    <h1>521</h1>
-                    <h3>Projects</h3>
-                </div>
-                <div class="col-sm-3">
-                    <h1>1453</h1>
-                    <h3>Hours of Suppport</h3>
-                </div>
-                <div class="col-sm-3">
-                    <h1>32</h1>
-                    <h3>Workers</h3>
+    <section>
+        <div class="container-fluid">
+            <div class="data bgimg-1">
+                <div class="row"
+                    style="width: 100%;display: flex;background-color: black;opacity: 0.5;justify-content: center;align-items: center;">
+                    <div class="col-6 col-sm-3">
+                        <h2>232</h2>
+                        <h3>Client</h3>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <h2>521</h2>
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <h2>1453</h2>
+                        <h3>Hours of Suppport</h3>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <h2>32</h2>
+                        <h3>Workers</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- menu -->
     <section id="Menu"
         style="height:fit-content;background-color: rgb(255, 255, 255);padding: 30px;display: flex; align-items: center;">
@@ -244,7 +274,7 @@
                 style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
                 <p class="h6">OUR MENU</p>
                 <h1 class="display-6">CHECK OUR YUMMY MENU</h1>
-                <UL class="nav nav-underline" style="font-size:x-large;">
+                <UL class="nav nav-underline" style="font-size:x-large;justify-content: center;">
                     <li class="nav-item"><a class="nav-link ">Starter</a></li>
                     <li class="nav-item"><a class="nav-link ">Breakfast</a></li>
                     <li class="nav-item"><a class="nav-link ">Lunch</a></li>
@@ -344,93 +374,128 @@
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-2"></div>
-                            <div class="col-6">
-                                <p>
-                                    <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram
-                                    irure aliqua veniam tempor noster
-                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                    culpa fore nisi cillum quid.
-                                    <i class="fa fa-quote-right"></i>
-                                </p>
-                                <h4>Sara Wilsson</h4>
-                                <p class="h6">Designer</p>
-                                <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </p>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8">
+                                        <p>
+                                            <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                            <i class="fa fa-quote-right"></i>
+                                        </p>
+                                        <h4>Sara Wilsson</h4>
+                                        <p class="h6">Designer</p>
+                                        <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <img src="./testimonials-2.jpg" class="d-block w-100" alt="..."
+                                            style="border-radius: 250px;">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <img src="./testimonials-2.jpg" class="d-block w-100" alt="..."
-                                    style="height: 200px;width: 200px;border-radius: 250px;">
-                            </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-2"></div>
-                            <div class="col-6">
-                                <p>
-                                    <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram
-                                    irure aliqua veniam tempor noster
-                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                    culpa fore nisi cillum quid.
-                                    <i class="fa fa-quote-right"></i>
-                                </p>
-                                <h4>Saul Goodman</h4>
-                                <p class="h6">Ceo & Founder</p>
-                                <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </p>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8 ">
+                                        <p>
+                                            <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                            <i class="fa fa-quote-right"></i>
+                                        </p>
+                                        <h4>Saul Goodman</h4>
+                                        <p class="h6">Ceo & Founder</p>
+                                        <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <img src="./testimonials-1.jpg" class="img-fluid" alt="..."
+                                            style="border-radius: 250px;">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <img src="./testimonials-1.jpg" class="d-block w-100" alt="..."
-                                    style="height: 200px;width: 200px;border-radius: 250px;">
-                            </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-2"></div>
-                            <div class="col-6">
-                                <p>
-                                    <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram
-                                    irure aliqua veniam tempor noster
-                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                    culpa fore nisi cillum quid.
-                                    <i class="fa fa-quote-right"></i>
-                                </p>
-                                <h4>Jena Karlis</h4>
-                                <p class="h6">Store Owner</p>
-                                <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </p>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8 ">
+                                        <p>
+                                            <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                            <i class="fa fa-quote-right"></i>
+                                        </p>
+                                        <h4>Jena Karlis</h4>
+                                        <p class="h6">Store Owner</p>
+                                        <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 ">
+                                        <img src="./testimonials-3.jpg" class="img-fluid" alt="..."
+                                            style="border-radius: 250px;">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <img src="./testimonials-3.jpg" class="d-block w-100" alt="..."
-                                    style="height: 200px;width: 200px;border-radius: 250px;">
-                            </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-2"></div>
-                            <div class="col-6">
-                                <p>
-                                    <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram
-                                    irure aliqua veniam tempor noster
-                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                    culpa fore nisi cillum quid.
-                                    <i class="fa fa-quote-right"></i>
-                                </p>
-                                <h4>John Larson</h4>
-                                <p class="h6">Entrepeneur</p>
-                                <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </p>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8 ">
+                                        <p>
+                                            <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore
+                                            sunt
+                                            eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse
+                                            veniam
+                                            culpa fore nisi cillum quid.
+                                            <i class="fa fa-quote-right"></i>
+                                        </p>
+                                        <h4>John Larson</h4>
+                                        <p class="h6">Entrepeneur</p>
+                                        <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <img src="./testimonials-4.jpg" class="img-fluid" alt="..."
+                                            style="border-radius: 250px;">
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-2">
-                                <img src="./testimonials-4.jpg" class="d-block w-100" alt="..."
-                                    style="height: 200px;width: 200px;border-radius: 250px;">
-                            </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
                 </div>
@@ -464,7 +529,7 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
                                         <div class="card text-bg-dark">
                                             <img src="./events-1.jpg" class="card-img" alt="..." style="opacity: 0.6;">
                                             <div class="card-img-overlayy">
@@ -478,7 +543,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
                                         <div class="card text-bg-dark">
                                             <img src="./events-2.jpg" class="card-img" alt="..." style="opacity: 0.6;">
                                             <div class="card-img-overlayy">
@@ -492,7 +557,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
                                         <div class="card text-bg-dark">
                                             <img src="./events-3.jpg" class="card-img" alt="..." style="opacity: 0.6;">
                                             <div class="card-img-overlayy">
@@ -510,9 +575,9 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
                                         <div class="card text-bg-dark">
-                                            <img src="./events-1.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <img src="./events-2.jpg " class="card-img" alt="..." style="opacity: 0.6;">
                                             <div class="card-img-overlayy">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">This is a wider card with supporting text below as
@@ -524,23 +589,23 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
-                                        <div class="card text-bg-dark">
-                                            <img src="./events-2.jpg" class="card-img" alt="..." style="opacity: 0.6;">
-                                            <div class="card-img-overlayy">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a
-                                                    natural lead-in to additional content. This content is a little bit
-                                                    longer.
-                                                </p>
-                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
                                         <div class="card text-bg-dark">
                                             <img src="./events-3.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src=" ./events-1.jpg" class="card-img" alt="..." style="opacity: 0.6;">
                                             <div class="card-img-overlayy">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">This is a wider card with supporting text below as
@@ -556,37 +621,37 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
-                                        <div class="card text-bg-dark">
-                                            <img src="./events-1.jpg" class="card-img" alt="..." style="opacity: 0.6;">
-                                            <div class="card-img-overlayy">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a
-                                                    natural lead-in to additional content. This content is a little bit
-                                                    longer.
-                                                </p>
-                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
-                                        <div class="card text-bg-dark">
-                                            <img src="./events-2.jpg" class="card-img" alt="..." style="opacity: 0.6;">
-                                            <div class="card-img-overlayy">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a
-                                                    natural lead-in to additional content. This content is a little bit
-                                                    longer.
-                                                </p>
-                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
                                         <div class="card text-bg-dark">
                                             <img src="./events-3.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src=" ./events-1.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 15px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src=" ./events-2.jpg" class="card-img" alt="..." style="opacity: 0.6;">
                                             <div class="card-img-overlayy">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">This is a wider card with supporting text below as
@@ -681,48 +746,48 @@
                         <img src="./reservation.jpg" class="img-fluid" style="height: 100% !important;">
                     </div>
                     <div class="col-md-8 book" style="display: flex;flex-direction: column;justify-content: center;">
-                        <div class="container">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tbody>
-                                        <tr class="row">
-                                            <td class="col">
-                                                <input type="text" class="form-control" placeholder="Your Name">
-                                            </td>
-                                            <td class="col">
-                                                <input type="email" class="form-control" placeholder="Your Email">
-                                            </td>
-                                            <td class="col">
-                                                <input type="tel" class="form-control" placeholder="Your Phone">
-                                            </td>
-                                        </tr>
-                                        <tr class="row">
-                                            <td class="col">
-                                                <input type="date" class="form-control">
-                                            </td>
-                                            <td class="col">
-                                                <input type="time" class="form-control">
-                                            </td>
-                                            <td class="col">
-                                                <input type="number" placeholder="# of people" class="form-control">
-                                            </td>
-                                        </tr>
-                                        <tr class="row">
-                                            <td class="col">
-                                                <input type="text" placeholder="Message" class="form-control">
-                                            </td>
-                                        </tr>
-                                        <tr class="row">
-                                            <td class="col">
-                                                <center><button type="submit" class="btn btn-outline-danger">Book a
-                                                        Table</button>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                
+                                    <tr class="row">
+                                        <td class="col">
+                                            <input type="text" class="form-control" placeholder="Your Name">
+                                        </td>
+                                        <td class="col">
+                                            <input type="email" class="form-control" placeholder="Your Email">
+                                        </td>
+                                        <td class="col">
+                                            <input type="tel" class="form-control" placeholder="Your Phone">
+                                        </td>
+                                    </tr>
+                                    <tr class="row">
+                                        <td class="col">
+                                            <input type="date" class="form-control">
+                                        </td>
+                                        <td class="col">
+                                            <input type="time" class="form-control">
+                                        </td>
+                                        <td class="col">
+                                            <input type="number" placeholder="# of people" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr class="row">
+                                        <td class="col">
+                                            <input type="text" placeholder="Message" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr class="row">
+                                        <td class="col">
+                                            <center><button type="submit" class="btn btn-outline-danger">Book a
+                                                    Table</button>
+                                            </center>
+                                        </td>
+                                    </tr>
+                                
+                            </table>
                         </div>
+
 
                     </div>
                 </div>
@@ -757,22 +822,22 @@
                             <div class="row ">
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-1.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-1.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-2.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-2.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-3.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-3.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-4.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
 
@@ -782,46 +847,22 @@
                             <div class="row" style="margin: 0; border: none;">
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-2.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-2.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-3.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-3.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-4.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-5.jpg" class="card-img" alt="..." height=400px>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row" style="margin: 0; border: none;">
-                                <div class="col-3">
-                                    <div class="card text-bg-dark">
-                                        <img src="./gallery-3.jpg" class="card-img" alt="..." height=400px>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card text-bg-dark">
-                                        <img src="./gallery-4.jpg" class="card-img" alt="..." height=400px>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card text-bg-dark">
-                                        <img src="./gallery-5.jpg" class="card-img" alt="..." height=400px>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card text-bg-dark">
-                                        <img src="./gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-5.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                             </div>
@@ -830,22 +871,22 @@
                             <div class="row" style="margin: 0; border: none;">
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-3.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-4.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-5.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-7.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-6.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                             </div>
@@ -854,22 +895,46 @@
                             <div class="row" style="margin: 0; border: none;">
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-4.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-5.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-7.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-6.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="card text-bg-dark">
-                                        <img src="./gallery-8.jpg" class="card-img" alt="..." height=400px>
+                                        <img src="./gallery-7.jpg" class="card-img" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row" style="margin: 0; border: none;">
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-5.jpg" class="card-img" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-6.jpg" class="card-img" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-7.jpg" class="card-img" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-8.jpg" class="card-img" alt="...">
                                     </div>
                                 </div>
                             </div>
@@ -888,9 +953,6 @@
                 </div>
             </div>
             <div>
-
-
-
     </section>
     <!-- contact us -->
     <section id="Contact"
