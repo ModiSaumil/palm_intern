@@ -15,10 +15,10 @@
 </head>
 
 <body>
-
+    <!-- nav -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Yummy.</a>
+            <a class="navbar-brand" href="#"><img src="./download.webp" style="width: 130px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -39,13 +39,13 @@
                         <a class="nav-link" href="#Menu">Menu</a>
                     </li>
                     <li class="nav-item" style="padding: 5px;">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="#Events">Events</a>
                     </li>
                     <li class="nav-item" style="padding: 5px;">
-                        <a class="nav-link" href="#">Chef</a>
+                        <a class="nav-link" href="#Chef">Chef</a>
                     </li>
                     <li class="nav-item" style="padding: 5px;">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="#Gallery">Gallery</a>
                     </li>
                     <li class="nav-item dropdown" style="padding: 5px;">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -57,14 +57,14 @@
                         </ul>
                     </li>
                     <li class="nav-item" style="padding: 5px;">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <button type="button" class="btn btn-danger" style="border-radius: 25px;">Book a table</button>
         </div>
     </nav>
-
+    <!-- home -->
     <section id="Home"
         style="height:600px;background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
         <div class="container">
@@ -85,126 +85,158 @@
                             class="fa fa-play-circle-o" style="margin-right: 10px;"></i>Watch Video</button>
                 </div>
                 <div class="column justify-content-center align-items-center" style="width: 50%;display: flex;">
-                    <img src="./hero-img.png" alt="dish" style="height: 500px;width: 500px;">
+                    <img src="./hero-img.png" alt="dish" style="height: 100%;width: 100%;">
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- about -->
     <section id="About"
         style="height:fit-content;background-color: rgb(243, 243, 243);padding: 30px;display: flex; align-items: center;">
         <div class="container ">
             <div
                 style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
-                <p class="h6">h6. Bootstrap heading</p>
+                <p class="h6">ABOUT US</p>
                 <h1 class="display-6">LEARN ABOUT US</h1>
             </div>
-            <div class="flex-row" style="width: 100%;display: flex;">
-                <div class="col-8">
-                    <img src="./about.jpg" style="height: 730px;width: 780px;">
+            <div class="row" style="width: 100%;display: flex;">
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <img src="./about.jpg" style="height: 100%;width: 100%;">
                 </div>
-                <div class="col-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                    <ul>
-                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                        <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
-                        </li>
-                    </ul>
-                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident</p>
-                    <img src="./about-2.jpg" alt="img" style="height: 345px;width: 450px;">
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                    <div class="row">
+                        <div class="row">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua.</p>
+
+                        </div>
+                        <div class="row">
+                            <ul>
+                                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                                    pariatur.
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="row">
+                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident</p>
+                        </div>
+
+                        <div class="row">
+                            <img src="./about-2.jpg" alt="img" style="height: 100%;width: 100%;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- why -->
     <section id="why"
         style="height:fit-content;background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
         <div class="container" style="display: flex;">
-            <div class="col-4">
-                <div class="card text-lg-start mb-3"
-                    style="width: 25rem;height: 25rem;background-color: red;padding: 15px;color: white;">
-                    <div class="card-body">
-                        <h1 class="card-title">Why Choose <br> Yummy?</h1>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                            Asperiores
-                            dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
-                            corporis.
-                        </p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card text-lg-start mb-3"
+                        style="width: 100%;background-color: red;padding: 15px;color: white;">
+                        <div class="card-body">
+                            <h1 class="card-title">Why Choose <br> Yummy?</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                Asperiores
+                                dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
+                                corporis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-8">
-                <div class="row" style="flex-wrap: nowrap;">
-                    <div class="card text-lg-start mb-3"
-                        style="width: 18rem;height: 23rem;background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
-                        <div class="card-body"
-                            style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
-                            <button
-                                style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
-                                    class="fa fa-bar-chart"></i></button>
-                            <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
-                            <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
-                                nisi ut aliquip</p>
+                <div
+                    class="col-sm-12 col-md-12 col-lg-8 align-content-center justify-content-center align-items-center">
+                    <div class="row" style="flex-wrap: wrap;">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="card text-lg-start ms-auto"
+                                style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                                <div class="card-body"
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    <button
+                                        style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
+                                            class="fa fa-bar-chart"></i></button>
+                                    <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                                    <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                                        laboris
+                                        nisi ut aliquip</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-lg-start mb-3"
-                        style="width: 18rem;height: 23rem;background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
-                        <div class="card-body"
-                            style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
-                            <button
-                                style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
-                                    class="fa fa-diamond"></i></button>
-                            <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
-                            <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
-                                nisi ut aliquip</p>
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="card text-lg-start ms-auto"
+                                style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                                <div class="card-body"
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    <button
+                                        style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
+                                            class="fa fa-diamond"></i></button>
+                                    <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                                    <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                                        laboris
+                                        nisi ut aliquip</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-lg-start mb-3"
-                        style="width: 18rem;height: 23rem;background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
-                        <div class="card-body"
-                            style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
-                            <button
-                                style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
-                                    class="fa fa-inbox"></i></button>
-                            <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
-                            <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
-                                nisi ut aliquip</p>
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="card text-lg-start ms-auto"
+                                style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                                <div class="card-body"
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    <button
+                                        style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
+                                            class="fa fa-inbox"></i></button>
+                                    <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                                    <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                                        laboris
+                                        nisi ut aliquip</p>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="data bgimg-1">
-        <div class="row" style="width: 100%;display: flex;background-color: black;opacity: 0.5;">
-            <div class="col-3">
-                <h1>232</h1>
-                <h3>Client</h3>
-            </div>
-            <div class="col-3">
-                <h1>521</h1>
-                <h3>Projects</h3>
-            </div>
-            <div class="col-3">
-                <h1>1453</h1>
-                <h3>Hours of Suppport</h3>
-            </div>
-            <div class="col-3">
-                <h1>32</h1>
-                <h3>Workers</h3>
+    <!-- data -->
+    <div class="container-fluid">
+        <div class="data bgimg-1">
+            <div class="row"
+                style="width: 100%;display: flex;background-color: black;opacity: 0.5;justify-content: center;align-items: center;">
+                <div class="col-sm-3">
+                    <h1>232</h1>
+                    <h3>Client</h3>
+                </div>
+                <div class="col-sm-3">
+                    <h1>521</h1>
+                    <h3>Projects</h3>
+                </div>
+                <div class="col-sm-3">
+                    <h1>1453</h1>
+                    <h3>Hours of Suppport</h3>
+                </div>
+                <div class="col-sm-3">
+                    <h1>32</h1>
+                    <h3>Workers</h3>
+                </div>
             </div>
         </div>
     </div>
-
+    <!-- menu -->
     <section id="Menu"
         style="height:fit-content;background-color: rgb(255, 255, 255);padding: 30px;display: flex; align-items: center;">
         <div class="container ">
@@ -288,7 +320,7 @@
             </div>
         </div>
     </section>
-
+    <!-- testimonials -->
     <section id="testimonials"
         style="height:fit-content;background-color: rgb(216, 216, 216);padding: 30px;display: flex; align-items: center;">
         <div class="container">
@@ -415,7 +447,613 @@
             </div>
         </div>
     </section>
+    <!-- events -->
+    <section id="Events"
+        style="height:fit-content;background-color: rgb(255, 255, 255);padding: 30px;display: flex; align-items: center;">
+        <div class="container">
+            <div style="display: flex;flex-direction: column;">
+                <div class="container ">
+                    <div
+                        style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                        <p class="h6">EVENTS</p>
+                        <h1 class="display-6">SHARE YOUR MOMENTS IN OUR RESTAURANT</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-1.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-2.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-3.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-1.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-2.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-3.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-1.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-2.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="margin: 1px;padding: 0px ;">
+                                        <div class="card text-bg-dark">
+                                            <img src="./events-3.jpg" class="card-img" alt="..." style="opacity: 0.6;">
+                                            <div class="card-img-overlayy">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural lead-in to additional content. This content is a little bit
+                                                    longer.
+                                                </p>
+                                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </section>
+    <!-- chef -->
+    <section id="Chef"
+        style="height:fit-content;background-color: rgb(243, 243, 243);padding: 30px;display: flex; align-items: center;">
+        <div class="container ">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">CHEFS</p>
+                <h1 class="display-6">OUR PROFESSIONAL CHEFS</h1>
+            </div>
+            <BR></BR>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./chefs-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body flex-column align-items-center" style="display: flex;">
+                            <h5 class="card-title">Walter White</h5>
+                            <p class="card-subtitle">Master Chef</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./chefs-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body flex-column align-items-center" style="display: flex;">
+                            <h5 class="card-title">Sarah Jhonson</h5>
+                            <p class="card-subtitle">patissier</p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./chefs-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body flex-column align-items-center" style="display: flex;">
+                            <h5 class="card-title">William Anderson</h5>
+                            <p class="card-subtitle">Cook</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- booka a table -->
+    <section id="Book a Table"
+        style="height:fit-content;background-color: rgb(255, 255, 255);padding: 30px;display: flex; align-items: center;">
+        <div class="container ">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">BOOK A TABLE</p>
+                <h1 class="display-6">BOOK YOUR STAY WITH US</h1>
+            </div>
+            <br>
+            <div class="container" style="background-color: lightgray; height: auto;">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <img src="./reservation.jpg" class="img-fluid" style="height: 100% !important;">
+                    </div>
+                    <div class="col-md-8 book" style="display: flex;flex-direction: column;justify-content: center;">
+                        <div class="container">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr class="row">
+                                            <td class="col">
+                                                <input type="text" class="form-control" placeholder="Your Name">
+                                            </td>
+                                            <td class="col">
+                                                <input type="email" class="form-control" placeholder="Your Email">
+                                            </td>
+                                            <td class="col">
+                                                <input type="tel" class="form-control" placeholder="Your Phone">
+                                            </td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col">
+                                                <input type="date" class="form-control">
+                                            </td>
+                                            <td class="col">
+                                                <input type="time" class="form-control">
+                                            </td>
+                                            <td class="col">
+                                                <input type="number" placeholder="# of people" class="form-control">
+                                            </td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col">
+                                                <input type="text" placeholder="Message" class="form-control">
+                                            </td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col">
+                                                <center><button type="submit" class="btn btn-outline-danger">Book a
+                                                        Table</button>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery -->
+    <section id="Gallery"
+        style="height:fit-content;background-color: rgb(243, 243, 243);padding: 30px;display: flex; align-items: center;">
+        <div class="container">
+            <div style="display: flex;align-content: center;align-items: center;flex-direction: column;">
+                <div
+                    style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                    <p class="h6">GALLERY</p>
+                    <h1 class="display-6">CHECK OUR GALLERY</h1>
+                </div>
+                <div id="carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row ">
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-1.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-2.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-3.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row" style="margin: 0; border: none;">
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-2.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-3.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row" style="margin: 0; border: none;">
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-3.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row" style="margin: 0; border: none;">
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-7.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row" style="margin: 0; border: none;">
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-7.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card text-bg-dark">
+                                        <img src="./gallery-8.jpg" class="card-img" alt="..." height=400px>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div>
+
+
+
+    </section>
+    <!-- contact us -->
+    <section id="Contact"
+        style="height:fit-content;background-color: rgb(255, 255, 255);padding: 30px;display: flex; align-items: center;">
+        <div class="container">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">CONTACT</p>
+                <h1 class="display-6">NEED HELP? CONTACT US</h1>
+            </div>
+            <DIV class="col-12">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.7715278639703!2d72.79139847589106!3d21.201233181831224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dcf4e1a1393%3A0xfdd151dde5d6dc07!2sPalm%20Infotech!5e0!3m2!1sen!2sin!4v1695119569633!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </DIV>
+            <div class="row">
+                <div class="col"
+                    style="background-color: rgb(243, 243, 243); padding: 15px;margin: 10px; display: flex;    align-items: center">
+                    <button class="btnn"><i class="fa fa-map"></i></button>
+                    <div>
+                        <b class="card-title">Our Address</b>
+                        <p class="card-subtitle">A 108 Adam street, New York, NY 535022</p>
+                    </div>
+                </div>
+                <div class="col"
+                    style="background-color: rgb(243, 243, 243); padding: 15px;margin: 10px; display:flex;    align-items: center">
+                    <button class="btnn"><i class="fa fa-envelope"></i></button>
+                    <div>
+                        <b class="card-title">Email us</b>
+                        <p class="card-subtitle">contact@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"
+                    style="background-color: rgb(243, 243, 243); padding: 15px;margin: 10px; display: flex;    align-items: center">
+                    <button class="btnn"><i class="fa fa-phone"></i></button>
+                    <div>
+                        <b class="card-title">Call us</b>
+                        <p class="card-subtitle">+1 5589 55488 55</p>
+                    </div>
+                </div>
+                <div class="col"
+                    style="background-color: rgb(243, 243, 243); padding: 15px;margin: 10px; display:flex;    align-items: center">
+                    <button class="btnn"><i class="fa fa-home"></i></button>
+                    <div>
+                        <b class="card-title">Opening Hours</b>
+                        <p class="card-subtitle"><b>Mon-Sat:</b> 11AM-23PM<br><b>Sunday:</b>Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cardd"
+                    style="background-color: rgb(255, 255, 255);box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); padding: 25px;">
+                    <div class="card-body">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" name="sub" class="form-control" id="sub" placeholder="Subject">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div>
+                                    <textarea name="msg" id="msg" class="form-control" cols="30" placeholder="Message"
+                                        rows="10"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row justify-content-center align-items-center align-content-center">
+                                <div class="col">
+                                    <center>
+                                        <button type="button" class="btn btn-danger" style="border-radius: 25px;">Send a
+                                            Message</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blank space -->
+    <section id="blank">
+        <div class="container">
+            <div class="row">
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </section>
+    <!-- footer start -->
+    <section id="Footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col" style="display: flex;align-items: center;">
+                        <div>
+                            <i class="fa fa-location-arrow"></i>
+                        </div>
+                        <div style="margin: 5%;">
+                            <p class="card-title"><b>Address</b></p>
+                            <p class="card-subtitle">A108 Adam Street
+                                <br>New York, NY 535022 - US
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" style="display: flex;align-items: center;">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div style="margin: 5%;">
+                            <p class="card-title"><b>Reservation</b></p>
+                            <p class="card-subtitle"><b>Phone: </b>+1 5589 55488 55
+                                <br><b>Email: </b>info@example.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" style="display: flex;align-items: center;">
+                        <div><i class="fa fa-clock-o"></i></div>
+                        <div style="margin: 5%;">
+
+                            <p class="card-title"><b>Opening Hours</b></p>
+                            <p class="card-subtitle"><b>Mon-sat: </b>11AM-23PM<br>
+                                <b>Sunday:</b>Closed
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="card-title"><b>Follow Us</b></p>
+                        <br>
+                        <button class="flw"><i class="fa fa-twitter"></i>
+                        </button>
+                        <button class="flw"><i class="fa fa-facebook"></i>
+                        </button>
+                        <button class="flw"><i class="fa fa-instagram"></i>
+                        </button>
+                        <button class="flw"><i class="fa fa-linkedin-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <center><i class="fa fa-copyright"></i><b> Yummy.</b>All Rights Reserved <br>
+                        Designed by <b>Saumil</b></center>
+                </div>
+                <br>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

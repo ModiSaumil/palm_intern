@@ -1,6 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+.nav-link{
+    color: gray !important;
+}
+
+.nav-link:hover{
+    color: black !important;
 }
 
 .data {
@@ -26,7 +34,8 @@
     min-height: 300px;
 }
 
-.col-3{
+.col-sm-3 {
+    opacity: 1 !important;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +43,7 @@
     justify-content: center;
 }
 
-.dataa{
+.dataa {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -42,11 +51,99 @@
     align-items: center;
 }
 
-.card{
+.card {
     border: none !important;
 }
 
-.star
-{
+.star {
     color: gold;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    right: 0%;
+    bottom: 1.25rem;
+    left: 15%;
+    left: 0%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.card-img-overlayy {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--bs-card-img-overlay-padding);
+    border-radius: var(--bs-card-inner-border-radius);
+}
+
+/* .card-img{ 
+    height: 600px;
+    width: 600px;
+    opacity: 0.5;
+}  */
+
+.card:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+
+.book {
+    margin-top: 100px;
+}
+
+.book input {
+    height: 40px;
+    width: 200px;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-color: lightgray;
+    border: 20px;
+}
+
+.book textarea {
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-color: lightgray;
+    border: 20px
+}
+
+.btnn {
+    background-color: red !important;
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: larger;
+    color: white;
+    margin: 5px;
+}
+
+.footer {
+    background-color: black;
+    padding: 15px;
+    color: white;
+}
+
+.flw{
+    border-color: #fff;
+    background: none;
+    border-radius: 25px;
+    border-color: white;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: x-large;
+    margin: 5px;
+}
+
+table td{
+    background-color: lightgray !important;
 }
