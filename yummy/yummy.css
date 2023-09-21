@@ -3,15 +3,15 @@
     padding: 0;
 }
 
-h1{
-   font-family: 'Sue Ellen Francisco', cursive;
+h1 {
+    font-family: 'Sue Ellen Francisco', cursive;
 }
 
-.nav-link{
+.nav-link {
     color: gray !important;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: black !important;
 }
 
@@ -47,7 +47,7 @@ h1{
     justify-content: center;
 }
 
-.row .why{
+.row .why {
     align-items: center !important;
 }
 
@@ -106,10 +106,10 @@ h1{
 }
 
 .book input {
-    height: 40px;
-    width: 200px;
+    /* height: 40px; */
+    /* max-width: 82%; */
     padding: 15px 30px;
-    margin: 10px 20px;
+    margin: 1%;
     border-radius: 10px;
     border-color: lightgray;
     border: 20px;
@@ -117,7 +117,7 @@ h1{
 
 .book textarea {
     padding: 15px 30px;
-    margin: 10px 20px;
+    margin: 1%;
     border-radius: 10px;
     border-color: lightgray;
     border: 20px
@@ -140,7 +140,7 @@ h1{
     color: white;
 }
 
-.flw{
+.flw {
     border-color: #fff;
     background: none;
     border-radius: 25px;
@@ -152,6 +152,100 @@ h1{
     margin: 5px;
 }
 
-table td{
+table td {
     background-color: lightgray !important;
+}
+
+.dt {
+    width: 28.5%;
+}
+
+.ti {
+    width: 28.5%;
+}
+
+@media screen and (max-width:992px) {
+
+    .galleryy {
+        height: auto;
+    }
+
+    .gal img {
+        height: 400px;
+    }
+
+    .gall {
+        margin: 10px;
+    }
+
+    .dt {
+        width: 41.5%;
+    }
+
+    .ti {
+        width: 41.5%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .dt {
+        width: 55%;
+    }
+
+    .ti {
+        width: 55%;
+    }
+
+    .hd2 {
+        display: none !important;
+    }
+
+    .d2{
+        display: none !important;
+    }
+   
+}
+
+@media screen and (max-width:425px) {
+
+    .fd {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dt {
+        width: 76%;
+    }
+
+    .ti {
+        width: 76%;
+    }
+
+    .hd2 {
+        display: none !important;
+    }
+
+    .d2{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .dt {
+        width: 90%;
+    }
+
+    .ti {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .dt {
+        width: 100%;
+    }
+
+    .ti {
+        width: 100%;
+    }
 }
