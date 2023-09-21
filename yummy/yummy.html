@@ -193,7 +193,7 @@
                             <div class="card text-lg-start ms-auto"
                                 style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
                                 <div class="card-body"
-                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center; flex-direction: column;">
                                     <button
                                         style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
                                             class="fa fa-bar-chart"></i></button>
@@ -208,7 +208,7 @@
                             <div class="card text-lg-start ms-auto"
                                 style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
                                 <div class="card-body"
-                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;flex-direction: column;">
                                     <button
                                         style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
                                             class="fa fa-diamond"></i></button>
@@ -223,7 +223,7 @@
                             <div class="card text-lg-start ms-auto"
                                 style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
                                 <div class="card-body"
-                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;flex-direction: column;">
                                     <button
                                         style="background-color: lightgray; border: none;height: 60px;width: 60px;border-radius: 25px;font-size: larger;"><i
                                             class="fa fa-inbox"></i></button>
@@ -745,26 +745,54 @@
                     <div class="col-md-5 col-lg-4">
                         <img src="./reservation.jpg" class="img-fluid" style="height: 100% !important;">
                     </div>
-                    <div class="col-md-7 col-lg-8 book" style="display: flex;flex-direction: column;justify-content: center;">
+                    <div class="col-md-7 col-lg-8 book"
+                        style="display: flex;flex-direction: column;justify-content: center;">
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 fd" style="max-width: 100% !important;">
-
-                                <input type="text" placeholder="Your Name">
-                                <input type="email" placeholder="Your Email">
-                                <input type="tel" placeholder="Your Phone">
-                            </div>
-                            <div class="col-lg-12 col-md-12 fd" style="max-width: 100% !important;">
-                                <input type="date" >
-                                <input type="time" >
-                                <input type="number" placeholder="# of people">
-                            </div>
-                            <div class="col-lg-11 col-md-11 col-sm-12 fd" >
-                                <textarea placeholder="message" class="form-control" ></textarea>
-                            </div>
-                            <div class="col-lg-12">
-                                <center><button type="submit" class="btn btn-outline-danger">Book a
-                                        Table</button>
-                                </center>
+                            <div class="cardd"
+                                style="padding: 25px;">
+                                <div class="card-body">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4 col-md-6">
+                                                <input type="text" class="form-control" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-lg-4 col-md-6">
+                                                <input type="text" class="form-control" placeholder="Your Email">
+                                            </div>
+                                            <div class="col-12 col-lg-4 col-md-6">
+                                                <input type="text" class="form-control" placeholder="Your Email">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4 col-md-6">
+                                                <input type="date" class="form-control" placeholder="Your Name" tooltip="arrival date">
+                                            </div>
+                                            <div class="col-12 col-lg-4 col-md-6">
+                                                <input type="time" class="form-control" placeholder="arrival time" tooltip="arrival time">
+                                            </div>
+                                            <div class="col-12 col-lg-4 col-md-6">
+                                                <input type="number" class="form-control" placeholder="# of peoples">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div>
+                                                <textarea name="msg" id="msg" class="form-control" cols="30"
+                                                    placeholder="Message" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row justify-content-center align-items-center align-content-center">
+                                            <div class="col">
+                                                <center>
+                                                    <button type="button" class="btn btn-danger"
+                                                        style="border-radius: 25px;">Book a Table</button>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1094,4 +1122,5 @@
     </section>
 </body>
 <script src="./number.js"></script>
+
 </html>
