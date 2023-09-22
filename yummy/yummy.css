@@ -34,7 +34,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("./stats-bg.jpg");
+    background-image: url("./extra/stats-bg.jpg");
     min-height: 300px;
 }
 
