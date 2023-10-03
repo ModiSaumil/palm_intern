@@ -36,6 +36,7 @@ function formValidation() {
             printError("fErr", "Please enter your first name");
         } else {
             if (letters.test(fname)) {
+                printError("fErr", " ");
             }
             else {
                 printError("fErr", "first name must have alphabet characters only");
@@ -48,6 +49,7 @@ function formValidation() {
             printError("lErr", "Please enter your last name");
         } else {
             if (letters.test(lname)) {
+                printError("lErr", " ");
             }
             else {
                 printError("lErr", "last name must have alphabet characters only");
@@ -61,6 +63,7 @@ function formValidation() {
             printError("eErr", "Please enter emailid");
         } else {
             if (mailformat.test(emailid)) {
+                printError("eErr", " ");
             }
             else {
                 printError("eErr", "You have entered an invalid email address!");
@@ -73,6 +76,7 @@ function formValidation() {
             printError("pErr", "Please enter password");
         } else {
             if (passv.test(pass)) {
+                printError("pErr", " ");
             }
             else {
                 printError("pErr", "Password Must Contain Atleast 8 Characters and One Number");
@@ -86,6 +90,7 @@ function formValidation() {
         } else {
 
             if (numbers.test(cnum)) {
+                printError("cErr", " ");
             }
             else {
                 printError("cErr", "Contact number must have numeric characters only AND 10 CHARACTERS ONLY");
@@ -97,6 +102,7 @@ function formValidation() {
         if (address == "" | address == null) {
             printError("aErr", "Please enter address");
         } else {
+            printError("aErr", " ");
         }
 
 
@@ -105,6 +111,7 @@ function formValidation() {
             return false;
         }
         else {
+            printError("ctErr", " ");
         }
 
         if (!s.checked && !n.checked && !o.checked) {
@@ -112,6 +119,7 @@ function formValidation() {
             return false;
         }
         else {
+            printError("gdErr", " ");
         }
 
         if (!allowedExtensions.exec(filePath)) {
@@ -119,11 +127,13 @@ function formValidation() {
             fileInput.value = '';
             return false;
         } else {
+            printError("ppErr", " ");
         }
 
         if (gt == "" | gt == null) {
             printError("lkErr", "Please enter url");
         } else {
+            printError("lkErr", " ");
         }
 
     }
