@@ -95,3 +95,9 @@ td {
     align-items: center;
     flex-wrap: nowrap;
 }
+
+#fErr,#lErr,#eErr,#pErr,#cErr,#aErr,#ctErr,#hbErr,#gdErr,#ppErr,#lkErr{
+    color: red;
+    font-size: medium;
+    font-weight: bold;
+}
