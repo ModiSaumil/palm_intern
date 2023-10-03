@@ -1,0 +1,97 @@
+.bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    /* background-image: url("../shtml/gtrb.jpg"); */
+    background-color: #a2f49b;
+    min-height: 600px;
+}
+
+.form {
+    padding: 2%;
+}
+
+fieldset {
+    padding: 1%;
+}
+
+label {
+    margin-right: 10px;
+    /* background-color: aqua; */
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+input[type=url] {
+    width: 15%;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    width: 10%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #f4d69b;
+    border: none;
+    padding: 8px;
+}
+
+textarea {
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+}
+
+select {
+    width: 15%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse !important;
+    width: 100%;
+}
+
+tr {
+    width: 100%;
+    display: flex;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+.td2{
+    text-align: left;
+    padding: 8px;
+    width: 100%;
+}
+
+.btn{
+    width: 50%;
+    height: 30px;
+
+}
+
+.td1 {
+    font-size: larger;
+    display: flex;
+    width: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}

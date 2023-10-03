@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>JS validation form</title>
+</head>
+
+<body>
+    <div class="bgimg-1">
+        <div class="form">
+            <form name="formval" action="#" method="post" enctype="multipart/form-data" required onsubmit="return formValidation()" id="formval">
+                <fieldset style="width: auto;">
+                    <legend> Registration Form </legend>
+                    <table>
+                        <tr>
+                            <td class="td1">
+                                <label >First name : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="text" name="fname" placeholder="enter first name" id="fname" autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="lname">Last name : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="text" name="lname" placeholder="enter last name" id="lname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="phonenum">Contact Number : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="number" name="contactnumber" placeholder="enter contact number"
+                                    id="contactnumber">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="emailid">Email id : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="email" name="emailid" placeholder="enter emailid" autofocus id="emailid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="pass">Password : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="password" name="password" placeholder="enter password" autofocus id="pass" size="8">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="add">Address : </label>
+                            </td>
+                            <td class="td2">
+                                <textarea style="height: 100px; width: 300px;" placeholder="enter address"
+                                    id="address"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="city">City : </label>
+                            </td>
+                            <td class="td2">
+                                <select id="ddcity" name="city" >
+                                    <option value="">(Please select a City)</option>
+                                    <option value="surat">surat</option>
+                                    <option value="vadodra">vadodra</option>
+                                    <option value="ahemdavad">ahemdavad</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="hobby">Hobby : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="checkbox" name="hobbies" id="cricket" value="cricekt">
+                                <label>Cricket</label>
+                                <input type="checkbox" name="hobbies" id="online-games" value="online-games">
+                                <label>online-games</label>
+                                <input type="checkbox" name="hobbies" id="photography" value="photography">
+                                <label>photography</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="gender">Gender : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label>male</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label>female</label>
+                                <input type="radio" name="gender" id="other" value="other">
+                                <label>other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="profilephot">Profile photo : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="file" name="file" id="file">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="giturl">Github : </label>
+                            </td>
+                            <td class="td2">
+                                <input type="url" name="giturl" placeholder="enter github url" id="giturl">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td1">
+                                <input type="submit" name="submit" class="btn" >
+                                <input type="reset" name="reset" class="btn">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="./validation.js"></script>
+
+</html>
