@@ -9,6 +9,7 @@ function formValidation() {
     var s = document.getElementById("male");
     var n = document.getElementById("female");
     var o = document.getElementById("other");
+    var gt = document.getElementById("giturl").value;
 
     var fileInput = document.getElementById('file');
     var filePath = fileInput.value;
@@ -19,31 +20,37 @@ function formValidation() {
     var numbers = /^[6789][0-9]{9}$/;
     var passv = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
 
+    var fErr = lErr = eErr = pErr = cErr = aErr = ctErr = hbErr = gdErr = ppErr = lkErr = true;
 
     if (fname == "" | lname == "" | emailid == "" | pass == "" | cnum == "" | address == "") {
         alert("enter all details")
         return false;
     }
     else {
+
+        function printError(elemId, hintMsg) {
+            document.getElementById(elemId).innerHTML = hintMsg;
+        }
+
         if (fname == "" | fname == null) {
-            alert("enter fname")
+            printError("fErr", "Please enter your first name");
         } else {
             if (letters.test(fname)) {
             }
             else {
-                alert('first name must have alphabet characters only');
+                printError("fErr", "first name must have alphabet characters only");
                 fname.value = '';
                 return false;
             }
         }
 
         if (lname == "" | lname == null) {
-            alert("enter lname")
+            printError("lErr", "Please enter your last name");
         } else {
             if (letters.test(lname)) {
             }
             else {
-                alert('last name must have alphabet characters only');
+                printError("lErr", "last name must have alphabet characters only");
                 lname.value = '';
                 return false;
             }
@@ -51,66 +58,71 @@ function formValidation() {
         }
 
         if (emailid == "" | emailid == null) {
-            alert("enter emailid")
+            printError("eErr", "Please enter emailid");
         } else {
             if (mailformat.test(emailid)) {
             }
             else {
-                alert("You have entered an invalid email address!");
+                printError("eErr", "You have entered an invalid email address!");
                 emailid.value = '';
                 return false;
             }
         }
 
         if (pass == "" | pass == null) {
-            alert("enter password")
+            printError("pErr", "Please enter password");
         } else {
             if (passv.test(pass)) {
             }
             else {
-                alert("Password Must Contain Atleast 8 Characters and One Number");
+                printError("pErr", "Password Must Contain Atleast 8 Characters and One Number");
                 pass.value == '';
                 return false;
             }
         }
 
         if (cnum == "" | cnum == null) {
-            alert("enter contact number")
+            printError("cErr", "Please enter contact number");
         } else {
 
             if (numbers.test(cnum)) {
             }
             else {
-                alert('Contact number must have numeric characters only AND 10 CHARACTERS ONLY');
+                printError("cErr", "Contact number must have numeric characters only AND 10 CHARACTERS ONLY");
                 cnum.value = '';
                 return false;
             }
         }
 
         if (address == "" | address == null) {
-            alert("enter address")
+            printError("aErr", "Please enter address");
         } else {
         }
 
 
         if (city.value == "") {
-            alert("Select City From Dropdown List");
+            printError("ctErr", "Please select city from dropdown");
             return false;
         }
         else {
         }
 
         if (!s.checked && !n.checked && !o.checked) {
-            alert("select your gender");
+            printError("gdErr", "Please select your gender");
             return false;
         }
         else {
         }
 
         if (!allowedExtensions.exec(filePath)) {
-            alert('Invalid file type');
+            printError("ppErr", "Please select proper file type");
             fileInput.value = '';
             return false;
+        } else {
+        }
+
+        if (gt == "" | gt == null) {
+            printError("lkErr", "Please enter url");
         } else {
         }
 
