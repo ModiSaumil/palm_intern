@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">RYAS.VN</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+                    <button class="btn btn-outline-success border-0" type="submit"><i class="fa fa-bars"></i></button>
+                </form>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+        <!-- main -->
+        <div class="container">
+            <div class="row">
+                <div class="col m-2">
+                    <div class="img-fluid imagecontainer">
+                        <img src="./jose-g-ortega-castro-tS4Pl_8F3fY-unsplash.jpg" alt="poster" class="poster">
+                        <div class="bottom-left text-start p-2">
+                            <p class="card-text fs-5"><i class="fa-regular fa-sun"></i></p>
+                            <p class="card-text fs-1">25 <sup>o</sup> </p>
+                            <p class="card-text fs-5">Adajan, Surat, Gujarat</p>
+                        </div>
+                        <div class="top-right text-end p-2">
+                            <p class="card-text">15:00</p>
+                            <p class="card-text">Thursday, 5 October 2023 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mainrow -->
+            <div class="row">
+                <!--left side 4 col-->
+                <div class="col-12 col-sm-12 col-lg-4 d-flex flex-column justify-content-evenly align-content-center">
+                    <!-- 4 col inner row box-->
+                    <div class="p-2 row border border-3 border-info rounded-5 m-2">
+                        <!-- in row 6 one side box -->
+                        <div class="col-6">
+                            <!-- 1st datarow -->
+                            <div class="row flex-nowrap">
+                                <div class="col ct"><i class="fa-solid fa-droplet" style="color: skyblue;font-weight: bold;"></i></div>
+                                <div class="col">
+                                    <p>RAIN</p>
+                                    <p style="color: skyblue;font-weight: bold;">0"</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col ct"><i class="fa-solid fa-wind" style="color: skyblue;font-weight: bold;"></i></div>
+                                <div class="col">
+                                    <p>WIND</p>
+                                    <p style="color: skyblue;font-weight: bold;">4MPH</p>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col ct"><i class="fa-regular fa-sun" style="color: skyblue;font-weight: bold;"></i></div>
+                                <div class="col">
+                                    <p>SUNRISE</p>
+                                    <p style="color: skyblue;font-weight: bold;">6:31AM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- inrow 6 second box -->
+                        <div class="col-6">
+                            <div class="row flex-nowrap">
+                                <div class="col ct"><i class="fa-solid fa-smog" style="color: skyblue;font-weight: bold;"></i></div>
+                                <div class="col ">
+                                    <p>HUMIDITY</p>
+                                    <p style="color: skyblue;font-weight: bold;">54%</p>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col ct"><i class="fa-solid fa-eye" style="color: skyblue;font-weight: bold;"></i></div>
+                                <div class="col">
+                                    <p>VISIBILITY</p>
+                                    <p style="color: skyblue;font-weight: bold;">13mi</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col ct"><i class="fa-solid fa-sun"style="color: skyblue;font-weight: bold;" ></i></div>
+                                <div class="col">
+                                    <p>SUNSET</p>
+                                    <p style="color: skyblue;font-weight: bold;">6:23PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border border-3 border-info rounded-5 m-2">
+                        <div class="col-12 p-1 d-flex justify-content-center align-items-center">
+                            <ul style="list-style: none;">
+                                <li> Location :<p style="color: skyblue;font-weight: bold;">Adajan Surat </p></li>
+                                <li> Current Time :<p style="color: skyblue;font-weight: bold;">5 Oct 2023, 12:12 </p></li>
+                                <li> <p style="color: skyblue;font-weight: bold;">Expect sunny skies. The high will reach 34° on this humid day. </p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-8">
+                    <div class="row p-3">
+                        <div class="border border-3 border-info rounded-5 p-3">
+                            <div class="row ">
+                                <div class="col">
+                                    <div class="card-title" style="font-weight: bold;"> 7- DAY WEATHER FORECAST</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="./jose-g-ortega-castro-tS4Pl_8F3fY-unsplash.jpg" alt="chart"
+                                    style="width: 100%;height: 160px;">
+                            </div>
+                            <br>
+                            <DIV class="row text-center">
+                                <DIV class="col-6 col-md-4 col-lg ">
+                                    <p>MON</p>
+                                    <p><i class="fa-solid fa-cloud-rain" style="color: skyblue;font-weight: bold;"></i></p>
+                                    <p class="sn" style="font-weight: bold;">15 <sup>o</sup></p>
+                                </DIV>
+                                <DIV class="col-6 col-md-4 col-lg bt ">
+                                    <p>TUE</p>
+                                    <p><i class="fa-solid fa-sun" style="color: skyblue;font-weight: bold;"></i></p>
+                                    <p class="sn" style="font-weight: bold;">22 <sup>o</sup></p>
+                                </DIV>
+                                <DIV class="col-6 col-md-4 col-lg bt ">
+                                    <p>WED</p>
+                                    <p><i class="fa-solid fa-cloud-bolt" style="color: skyblue;font-weight: bold;"></i></p>
+                                    <p class="sn" style="font-weight: bold;">14 <sup>o</sup></p>
+                                </DIV>
+                                <DIV class="col-6 col-md-4 col-lg bt  ">
+                                    <p>THU</p>
+                                    <p><i class="fa-solid fa-wind" style="color: skyblue;font-weight: bold;"></i></p>
+                                    <p class="sn" style="font-weight: bold;">18 <sup>o</sup></p>
+                                </DIV>
+                                <DIV class="col-6 col-md-4 col-lg bt ">
+                                    <p>FRI</p>
+                                    <p><i class="fa-solid fa-cloud" style="color: skyblue;font-weight: bold;"></i></p>
+                                    <p class="sn" style="font-weight: bold;">14 <sup>o</sup></p>
+                                </DIV>
+                                <DIV class="col-6 col-md-4 col-lg bt ">
+                                    <p>SAT</p>
+                                    <p><i class="fa-solid fa-cloud-showers-heavy" style="color: skyblue;font-weight: bold;"></i></p>
+                                    <p class="sn" style="font-weight: bold;">15 <sup>o</sup></p>
+                                </DIV>
+                                <DIV class="col-6 col-md-4 col-lg bt ">
+                                    <p>SUN</p>
+                                    <p><i class="fa-solid fa-tornado" style="color: skyblue;font-weight: bold;"></i></p>
+                                    <p class="sn" style="font-weight: bold;">16 <sup>o</sup></p>
+                                </DIV>
+                            </DIV>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of main -->
+    </div>
+
+
+
+
+</body>
+
+</html>

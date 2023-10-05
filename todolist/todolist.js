@@ -17,17 +17,16 @@ function displayItem() {
     for (let i = 0; i < itemsArray.length; i++) {
         items += `<div class="item">
         <div class="input-con d-flex m-2">
-            <input type="text" class="form-control fs-4 justify-content-center" value="` + itemsArray[i] + `" disabled></input>
+        <input type="checkbox" id="myCheck" class="donetask fs-4 m-2">
+            <input type="text" id="myDIV" class="form-control fs-4 justify-content-center" value="` + itemsArray[i] + `" disabled></input>
             <div class="edit-con d-flex m-2">
                 <span class="edittask m-2"><i class="fa fa-pencil fs-3" ></i></span>
                 <span class="deletetask m-2"><i class="fa fa-trash fs-3"></i></span>
             </div>
         </div>
         <div class="update-con m-2 justify-content-center">
-            
             <button class="save btn btn-success m-1">Save</button>
             <button class="cancel btn btn-warning m-1">Cancel</button>
-
         </div>
         <div id="eErr" class="d-flex justify-content-center"></div>
     </div>`
@@ -37,6 +36,8 @@ function displayItem() {
     edittask()
     savebtn()
     cancelbtn()
+    donetask()
+    myFunction()
 }
 
 function createItem(item) {
@@ -133,3 +134,38 @@ function deleteItem(i) {
 window.onload = function () {
     displayItem()
 }
+
+
+function donetask(){
+    const input = document.querySelectorAll(".input-con input")
+    let donetask = document.querySelectorAll(".donetask")
+    donetask.forEach((db,i)=>{
+        db.addEventListener("click",()=>{
+            var checkBox = document.getElementById("myCheck");
+            if(checkBox.checked == true){
+                console.log('done')
+                
+            }else{
+                console.log('not done')
+                
+            }
+               
+        })
+    })
+}
+
+function donetaskline(i){
+
+    var checkBox = document.getElementById("myCheck");
+    if (checkBox.checked == true){
+        document.getElementById("myDIV").style.textDecorationLine = "line-through";
+    } else {
+        document.getElementById("myDIV").style.textDecorationLine = "none";
+    }
+
+    // document.getElementById("myDIV").style.textDecorationLine = "line-through";
+}
+
+function myFunction() {
+    
+  }

@@ -1,0 +1,66 @@
+.poster {
+    width: 100% !important;
+    height: 400px !important;
+    border-radius: 50px !important;
+    border: none !important;
+}
+
+.img-fluid {
+    border-radius: 50px !important;
+    border: none !important;
+    box-shadow: 10px 10px 5px lightblue !important;
+}
+
+.imagecontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.ct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:1024px) {
+    .bt{
+        border-left: 1.5px solid rgb(0, 0, 0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    .bt{
+        border: none;
+    }
+
+    .sn{
+        border-bottom-width: 50%;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+}
