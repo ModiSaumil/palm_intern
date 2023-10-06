@@ -1,6 +1,6 @@
 .poster {
     width: 100% !important;
-    height: 400px !important;
+    height: 300px !important;
     border-radius: 50px !important;
     border: none !important;
 }
@@ -8,7 +8,7 @@
 .img-fluid {
     border-radius: 50px !important;
     border: none !important;
-    box-shadow: 10px 10px 5px lightblue !important;
+    box-shadow: 10px 10px 5px rgb(98, 105, 107) !important;
 }
 
 .imagecontainer {
@@ -41,26 +41,39 @@
     right: 16px;
 }
 
-.ct{
+.ct {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 @media screen and (max-width:1024px) {
-    .bt{
+    .bt {
         border-left: 1.5px solid rgb(0, 0, 0);
     }
 }
 
 @media screen and (max-width:768px) {
-    
-    .bt{
+
+    .bt {
         border: none;
     }
 
-    .sn{
+    .sn {
         border-bottom-width: 50%;
         border-bottom: 1px solid rgb(0, 0, 0);
     }
+}
+
+
+@media screen and (max-width:425px) {
+
+    .hd {
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap !important;
+
+    }
+
 }
