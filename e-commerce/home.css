@@ -11,3 +11,18 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.sh{
+    width: 50% !important;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .nt{
+        left: 0px;
+    }
+
+    .sh{
+        width: 100% !important;
+    }
+}
