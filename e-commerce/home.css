@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-.nt{
+.nt {
     display: flex;
     /* bottom: 243px; */
     /* top: auto; */
@@ -12,17 +12,99 @@
     justify-content: center;
 }
 
-.sh{
+.sh {
     width: 50% !important;
 }
 
 @media screen and (max-width:1024px) {
-    
-    .nt{
+
+    .nt {
         left: 0px;
     }
 
-    .sh{
+    .sh {
         width: 100% !important;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .navd {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .bt4 {
+        display: none;
+    }
+
+    .d1 {
+        display: none;
+    }
+
+    .smt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mar1 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+
+    .bt2 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bt3 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mar1 {
+        margin-top: 0px;
+    }
+
+    .mar {
+        margin-top: 20px;
+    }
+
+    .tt {
+        display: none;
+    }
+
+    .d1 {
+        display: block;
+    }
+
+    .d2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .mn {
+        display: none;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .nt {
+       display: none;
+    }
+
+    .not {
+        display: flex;
+        flex-direction: column;
     }
 }
