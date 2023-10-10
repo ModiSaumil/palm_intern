@@ -21,24 +21,24 @@ var w1 = document.querySelector("#wind1")
 var h1 = document.querySelector("#hum1")
 
 var n2 = document.querySelector("#nd2")
-var t2= document.querySelector("#temp2")
-var w2= document.querySelector("#wind2")
-var h2= document.querySelector("#hum2")
+var t2 = document.querySelector("#temp2")
+var w2 = document.querySelector("#wind2")
+var h2 = document.querySelector("#hum2")
 
 var n3 = document.querySelector("#nd3")
-var t3= document.querySelector("#temp3")
-var w3= document.querySelector("#wind3")
-var h3= document.querySelector("#hum3")
+var t3 = document.querySelector("#temp3")
+var w3 = document.querySelector("#wind3")
+var h3 = document.querySelector("#hum3")
 
 var n4 = document.querySelector("#nd4")
-var t4= document.querySelector("#temp4")
-var w4= document.querySelector("#wind4")
-var h4= document.querySelector("#hum4")
+var t4 = document.querySelector("#temp4")
+var w4 = document.querySelector("#wind4")
+var h4 = document.querySelector("#hum4")
 
 var n5 = document.querySelector("#nd5")
-var t5= document.querySelector("#temp5")
-var w5= document.querySelector("#wind5")
-var h5= document.querySelector("#hum5")
+var t5 = document.querySelector("#temp5")
+var w5 = document.querySelector("#wind5")
+var h5 = document.querySelector("#hum5")
 
 
 
@@ -84,23 +84,23 @@ btn.addEventListener('click', function () {
 
             var visib = data['list']['0']['visibility']
             var visibc = (visib / 1000);
-            
+
             var curn = new Date()
             curn.setDate(curn.getDate())
-            var curn1= new Date()
-            curn1.setDate(curn.getDate()+1)
-            var curn2= new Date()
-            curn2.setDate(curn.getDate()+2)
-            var curn3= new Date()
-            curn3.setDate(curn.getDate()+3)
-            var curn4= new Date()
-            curn4.setDate(curn.getDate()+4)
-            
+            var curn1 = new Date()
+            curn1.setDate(curn.getDate() + 1)
+            var curn2 = new Date()
+            curn2.setDate(curn.getDate() + 2)
+            var curn3 = new Date()
+            curn3.setDate(curn.getDate() + 3)
+            var curn4 = new Date()
+            curn4.setDate(curn.getDate() + 4)
+
             var tii1 = curn1.toISOString().split('T')[0]
             var tii2 = curn2.toISOString().split('T')[0]
             var tii3 = curn3.toISOString().split('T')[0]
             var tii4 = curn4.toISOString().split('T')[0]
-            
+
 
             var tii = curn.toISOString().split('T')[0]
             // var dtt = curn.toISOString().split('T')[0]
@@ -162,4 +162,59 @@ btn.addEventListener('click', function () {
 
 inputval.innerHTML = "";
 
+// Get references to the dropdown elements
+const countryDropdown = document.getElementById("country");
+const stateDropdown = document.getElementById("state");
+const cityDropdown = document.getElementById("city");
+
+// Fetch the list of countries from the REST API
+fetch("https://restcountries.com/v3.1/all")
+    .then((response) => response.json())
+    .then((data) => {
+        // Populate the country dropdown with country names
+        data.forEach((country) => {
+            const option = document.createElement("option");
+            option.value = country.name.common;
+            option.text = country.name.common;
+            countryDropdown.appendChild(option);
+        });
+
+        // Add an event listener to the country dropdown
+        countryDropdown.addEventListener("change", () => {
+            // Clear state and city dropdowns when a new country is selected
+            stateDropdown.innerHTML = '<option value="">Select a state</option>';
+            cityDropdown.innerHTML = '<option value="">Select a city</option>';
+
+            // Get the selected country
+            const selectedCountry = countryDropdown.value;
+
+            // Fetch states/cities data for the selected country from your API
+            // Replace this with the appropriate API endpoint for state and city data
+            fetch(`${selectedCountry}`)
+                .then((response) => response.json())
+                .then((data) => {
+                    // Populate the state dropdown with state names
+                    data.states.forEach((state) => {
+                        const option = document.createElement("option");
+                        option.value = state.name;
+                        option.text = state.name;
+                        stateDropdown.appendChild(option);
+                    });
+
+                    // Populate the city dropdown with city names
+                    data.cities.forEach((city) => {
+                        const option = document.createElement("option");
+                        option.value = city.name;
+                        option.text = city.name;
+                        cityDropdown.appendChild(option);
+                    });
+                })
+                .catch((error) => {
+                    console.error("Error fetching state/city data:", error);
+                });
+        });
+    })
+    .catch((error) => {
+        console.error("Error fetching country data:", error);
+    });
 
