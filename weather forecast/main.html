@@ -20,10 +20,13 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid hd">
                 <a class="navbar-brand">RYAS.VN</a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-                    <button class="btn btn-outline-success border-0" type="submit"><i class="fa fa-bars"></i></button>
-                </form>
+                <div class="weather-input d-flex justify-content-evenly">
+                    
+                    <input class="city-input" id="cityinput" type="text" placeholder="Enter city name">
+                    <button class="search-btn" id="add">Search</button>
+                    <!-- <div class="separator"></div> -->
+                    <!-- <button class="location-btn">Use Current Location</button> -->
+                </div>
             </div>
         </nav>
         <!-- end of navbar -->
@@ -34,13 +37,17 @@
                     <div class="img-fluid imagecontainer">
                         <img src="./jose-g-ortega-castro-tS4Pl_8F3fY-unsplash.jpg" alt="poster" class="poster">
                         <div class="bottom-left text-start p-2">
-                            <p class="card-text fs-5"><i class="fa-regular fa-sun"></i></p>
-                            <p class="card-text fs-1">25 <sup>o</sup> </p>
-                            <p class="card-text fs-5">Adajan, Surat, Gujarat</p>
+                            <div style="color: white !important;">
+                                <h2 id="cityoutput">_______ ( ______ )</h2>
+                                <h6 id="temp">Temperature: __°C</h6>
+                                <h6 id="fl">Feels like : __°C</h6>
+                                <h6 id="description">Desciption : ___ </h6>
+
+                            </div>
                         </div>
                         <div class="top-right text-end p-2">
-                            <p class="card-text">15:00</p>
-                            <p class="card-text">Thursday, 5 October 2023 </p>
+                            <p class="card-text" id="ti"></p>
+                            <!-- <p class="card-text" id="dt"></p> -->
                         </div>
                     </div>
                 </div>
@@ -58,8 +65,8 @@
                                 <div class="col ct"><i class="fa-solid fa-droplet"
                                         style="color: skyblue;font-weight: bold;"></i></div>
                                 <div class="col">
-                                    <p>RAIN</p>
-                                    <p style="color: skyblue;font-weight: bold;">0"</p>
+                                    <p>PRESSURE</p>
+                                    <p style="color: skyblue;font-weight: bold;" id="pr"></p>
                                 </div>
                             </div>
                             <div class="row">
@@ -67,7 +74,7 @@
                                         style="color: skyblue;font-weight: bold;"></i></div>
                                 <div class="col">
                                     <p>WIND</p>
-                                    <p style="color: skyblue;font-weight: bold;">4MPH</p>
+                                    <p style="color: skyblue;font-weight: bold;" id="wind"></p>
                                 </div>
                             </div>
                             <div class="row flex-nowrap">
@@ -75,7 +82,7 @@
                                         style="color: skyblue;font-weight: bold;"></i></div>
                                 <div class="col">
                                     <p>SUNRISE</p>
-                                    <p style="color: skyblue;font-weight: bold;">6:31AM</p>
+                                    <p style="color: skyblue;font-weight: bold;" id="sunrise"></p>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +93,7 @@
                                         style="color: skyblue;font-weight: bold;"></i></div>
                                 <div class="col ">
                                     <p>HUMIDITY</p>
-                                    <p style="color: skyblue;font-weight: bold;">54%</p>
+                                    <p style="color: skyblue;font-weight: bold;" id="hum"></p>
                                 </div>
                             </div>
                             <div class="row flex-nowrap">
@@ -94,7 +101,7 @@
                                         style="color: skyblue;font-weight: bold;"></i></div>
                                 <div class="col">
                                     <p>VISIBILITY</p>
-                                    <p style="color: skyblue;font-weight: bold;">13mi</p>
+                                    <p style="color: skyblue;font-weight: bold;" id="visi"></p>
                                 </div>
                             </div>
                             <div class="row">
@@ -102,7 +109,7 @@
                                         style="color: skyblue;font-weight: bold;"></i></div>
                                 <div class="col">
                                     <p>SUNSET</p>
-                                    <p style="color: skyblue;font-weight: bold;">6:23PM</p>
+                                    <p style="color: skyblue;font-weight: bold;" id="sunset"></p>
                                 </div>
                             </div>
                         </div>
@@ -111,13 +118,10 @@
                         <div class="col-12 p-1 d-flex justify-content-center align-items-center">
                             <ul
                                 style="display: flex;list-style: none;flex-direction: column;padding: 5px 0px 0px 20px;align-content: center;justify-content: center;">
-                                <li style="display: flex;"> Location :<p style="color: skyblue;font-weight: bold;">Adajan Surat </p>
-                                </li>
-                                <li style="display: flex;"> Current Time :<p style="color: skyblue;font-weight: bold;">5 Oct 2023, 12:12 </p>
+                                <li style="display: flex;"> Current Time :<p style="color: skyblue;font-weight: bold;" id="ctm" ></p>
                                 </li>
                                 <li>
-                                    <p style="color: skyblue;font-weight: bold;">Expect sunny skies. The high will reach
-                                        34° on this humid day. </p>
+                                    <p style="color: skyblue;font-weight: bold;"></p>
                                 </li>
                             </ul>
                         </div>
@@ -128,7 +132,7 @@
                         <div class="border border-3 border-info rounded-5 p-3">
                             <div class="row ">
                                 <div class="col">
-                                    <div class="card-title" style="font-weight: bold;"> 7- DAY WEATHER FORECAST</div>
+                                    <div class="card-title" style="font-weight: bold;"> 5- DAY WEATHER FORECAST</div>
                                 </div>
                             </div>
                             <br>
@@ -138,45 +142,54 @@
                             </div>
                             <br>
                             <DIV class="row text-center">
-                                <DIV class="col-6 col-md-4 col-lg ">
-                                    <p>MON</p>
-                                    <p><i class="fa-solid fa-cloud-rain" style="color: skyblue;font-weight: bold;"></i>
-                                    </p>
-                                    <p class="sn" style="font-weight: bold;">15 <sup>o</sup></p>
-                                </DIV>
-                                <DIV class="col-6 col-md-4 col-lg bt ">
-                                    <p>TUE</p>
-                                    <p><i class="fa-solid fa-sun" style="color: skyblue;font-weight: bold;"></i></p>
-                                    <p class="sn" style="font-weight: bold;">22 <sup>o</sup></p>
-                                </DIV>
-                                <DIV class="col-6 col-md-4 col-lg bt ">
-                                    <p>WED</p>
-                                    <p><i class="fa-solid fa-cloud-bolt" style="color: skyblue;font-weight: bold;"></i>
-                                    </p>
-                                    <p class="sn" style="font-weight: bold;">14 <sup>o</sup></p>
-                                </DIV>
-                                <DIV class="col-6 col-md-4 col-lg bt  ">
-                                    <p>THU</p>
-                                    <p><i class="fa-solid fa-wind" style="color: skyblue;font-weight: bold;"></i></p>
-                                    <p class="sn" style="font-weight: bold;">18 <sup>o</sup></p>
-                                </DIV>
-                                <DIV class="col-6 col-md-4 col-lg bt ">
-                                    <p>FRI</p>
-                                    <p><i class="fa-solid fa-cloud" style="color: skyblue;font-weight: bold;"></i></p>
-                                    <p class="sn" style="font-weight: bold;">14 <sup>o</sup></p>
-                                </DIV>
-                                <DIV class="col-6 col-md-4 col-lg bt ">
-                                    <p>SAT</p>
-                                    <p><i class="fa-solid fa-cloud-showers-heavy"
-                                            style="color: skyblue;font-weight: bold;"></i></p>
-                                    <p class="sn" style="font-weight: bold;">15 <sup>o</sup></p>
-                                </DIV>
-                                <DIV class="col-6 col-md-4 col-lg bt ">
-                                    <p>SUN</p>
-                                    <p><i class="fa-solid fa-tornado" style="color: skyblue;font-weight: bold;"></i></p>
-                                    <p class="sn" style="font-weight: bold;">16 <sup>o</sup></p>
-                                </DIV>
+                                <ul class="weather-cards d-flex">
+                                    <div class="col">
+                                        <li class="card ">
+                                            <h3 id="nd1">( ______ )</h3>
+                                            <h6 id="temp1">Temp: __C</h6>
+                                            <h6 id="wind1">Wind: __ M/S</h6>
+                                            <h6 id="hum1">Humidity: __%</h6>
+                                        </li>
+                                    </div>
+                                    <div class="col">
+                                        <li class="card">
+                                            <h3 id="nd2">( ______ )</h3>
+                                            <h6 id="temp2">Temp: __C</h6>
+                                            <h6 id="wind2">Wind: __ M/S</h6>
+                                            <h6 id="hum2">Humidity: __%</h6>
+                                        </li>
+
+                                    </div>
+                                    <div class="col">
+                                        <li class="card">
+                                            <h3 id="nd3">( ______ )</h3>
+                                            <h6 id="temp3">Temp: __C</h6>
+                                            <h6 id="wind3">Wind: __ M/S</h6>
+                                            <h6 id="hum3">Humidity: __%</h6>
+                                        </li>
+
+                                    </div>
+                                    <div class="col">
+                                        <li class="card">
+                                            <h3 id="nd4">( ______ )</h3>
+                                            <h6 id="temp4">Temp: __C</h6>
+                                            <h6 id="wind4">Wind: __ M/S</h6>
+                                            <h6 id="hum4">Humidity: __%</h6>
+                                        </li>
+                                    </div>
+                                    <div class="col">
+                                        <li class="card">
+                                            <h3 id="nd5">( ______ )</h3>
+                                            <h6 id="temp5">Temp: __C</h6>
+                                            <h6 id="wind5">Wind: __ M/S</h6>
+                                            <h6 id="hum5">Humidity: __%</h6>
+                                        </li>
+                                    </div>
+                                </ul>
+
+                                
                             </DIV>
+
                         </div>
                     </div>
                 </div>
@@ -185,10 +198,8 @@
         </div>
         <!-- end of main -->
     </div>
-
-
-
-
+    <!-- <script src="script.js"></script> -->
+    <script src="script1.js"></script>
 </body>
 
 </html>
