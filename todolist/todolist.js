@@ -36,8 +36,8 @@ function displayItem() {
     edittask()
     savebtn()
     cancelbtn()
-    donetask()
-    myFunction()
+    // donetask()
+    // myFunction()
 }
 
 function createItem(item) {
@@ -137,36 +137,36 @@ window.onload = function () {
 }
 
 
-function donetask(){
-    const input = document.querySelectorAll(".input-con input")
-    let donetask = document.querySelectorAll(".donetask")
-    donetask.forEach((db,i)=>{
-        db.addEventListener("click",()=>{
-            var checkBox = document.getElementById("myCheck");
-            if(checkBox.checked == true){
-                console.log('done')
+// function donetask(){
+//     const input = document.querySelectorAll(".input-con input")
+//     let donetask = document.querySelectorAll(".donetask")
+//     donetask.forEach((db,i)=>{
+//         db.addEventListener("click",()=>{
+//             var checkBox = document.getElementById("myCheck");
+//             if(checkBox.checked == true){
+//                 console.log('done')
                 
-            }else{
-                console.log('not done')
+//             }else{
+//                 console.log('not done')
                 
-            }
+//             }
                
-        })
-    })
-}
+//         })
+//     })
+// }
 
-function donetaskline(i){
+// function donetaskline(i){
 
-    var checkBox = document.getElementById("myCheck");
-    if (checkBox.checked == true){
-        document.getElementById("myDIV").style.textDecorationLine = "line-through";
-    } else {
-        document.getElementById("myDIV").style.textDecorationLine = "none";
-    }
+//     var checkBox = document.getElementById("myCheck");
+//     if (checkBox.checked == true){
+//         document.getElementById("myDIV").style.textDecorationLine = "line-through";
+//     } else {
+//         document.getElementById("myDIV").style.textDecorationLine = "none";
+//     }
 
     // document.getElementById("myDIV").style.textDecorationLine = "line-through";
-}
+// }
 
-function myFunction() {
+// function myFunction() {
     
-  }
+//   }
