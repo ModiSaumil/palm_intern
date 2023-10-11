@@ -17,6 +17,11 @@
     .update-con {
         display: none
     }
+
+    /* Define a CSS class for the strikethrough effect */
+    .strikethrough {
+        text-decoration: line-through;
+    }
 </style>
 
 <body>
@@ -42,7 +47,7 @@
                 <div class="card m-4">
                     <div class="card-body">
                         <div class="todolist">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -52,6 +57,18 @@
         </div>
     </div>
     <script src="./todolist.js"></script>
+
+
+    <script>
+        function toggleStrikethrough(checkbox) {
+            var listItem = checkbox.parentNode; // Get the parent <li> element
+            if (checkbox.checked) {
+                listItem.classList.add("strikethrough"); // Apply strikethrough style
+            } else {
+                listItem.classList.remove("strikethrough"); // Remove strikethrough style
+            }
+        }
+    </script>
 
 </body>
 

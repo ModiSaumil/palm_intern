@@ -17,8 +17,8 @@ function displayItem() {
     for (let i = 0; i < itemsArray.length; i++) {
         items += `<div class="item">
         <div class="input-con d-flex m-2">
-        <input type="checkbox" id="myCheck" class="donetask fs-4 m-2">
-            <input type="text" id="myDIV" class="form-control fs-4 justify-content-center" value="` + itemsArray[i] + `" disabled></input>
+        <input type="checkbox" id="myCheck" class="donetask fs-4 m-2" onclick="toggleStrikethrough(this)">
+            <input type="text" id="myDIV" class="form-control fs-4 justify-content-center" value="` + itemsArray[i] + `" disabled ></input>
             <div class="edit-con d-flex m-2">
                 <span class="edittask m-2"><i class="fa fa-pencil fs-3" ></i></span>
                 <span class="deletetask m-2"><i class="fa fa-trash fs-3"></i></span>
@@ -106,7 +106,8 @@ function updateItem(text, i) {
 function cancelbtn() {
     const cancel = document.querySelectorAll(".cancel")
     const update = document.querySelectorAll(".update-con")
-    const input = document.querySelectorAll(".input-con input")
+    const input = 
+    document.querySelectorAll(".input-con input")
 
     cancel.forEach((cb, i) => {
         cb.addEventListener("click", () => {

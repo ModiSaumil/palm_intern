@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define a CSS class for the strikethrough effect */
+        .strikethrough {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <ul id="todoList">
+        <li>
+            <input type="checkbox" onclick="toggleStrikethrough(this)">
+            Task 1
+        </li>
+        <li>
+            <input type="checkbox" onclick="toggleStrikethrough(this)">
+            Task 2
+        </li>
+        <!-- Add more list items as needed -->
+    </ul>
+
+    <script>
+        // Function to toggle the strikethrough style
+        function toggleStrikethrough(checkbox) {
+            var listItem = checkbox.parentNode; // Get the parent <li> element
+            if (checkbox.checked) {
+                listItem.classList.add("strikethrough"); // Apply strikethrough style
+            } else {
+                listItem.classList.remove("strikethrough"); // Remove strikethrough style
+            }
+        }
+    </script>
+</body>
+</html>
