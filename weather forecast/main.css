@@ -59,6 +59,12 @@
 
 @media screen and (max-width:768px) {
 
+    .hd{
+        display: flex;
+        justify-content: center !important;
+    }
+
+
     .bt {
         border: none;
     }
@@ -73,10 +79,6 @@
 @media screen and (max-width:425px) {
 
     .hd {
-        width: max-content;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap !important;
 
     }
 
@@ -89,5 +91,11 @@
         display: flex;
         justify-content: center !important;
     }
+
+    .np{
+        flex-direction: column;
+    }
+
+    
 
 }

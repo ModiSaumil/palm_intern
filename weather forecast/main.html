@@ -20,8 +20,30 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid hd">
                 <a class="navbar-brand">RYAS.VN</a>
-                <div class="weather-input d-flex justify-content-evenly">
-                    <input class="city-input form-control" id="cityinput" type="text" placeholder="Enter city name">
+                <div class="weather-input d-flex justify-content-evenly np">
+                    <div class="select_option">
+                        <div class="row np">
+                            <div class="col">
+                                <select class="form-select country" aria-label="Default select example"
+                                    onchange="loadStates()">
+                                    <option selected>Select Country</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-select state" aria-label="Default select example"
+                                    onchange="loadCities()">
+                                    <option selected>Select State</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-select city" id="cityinput" aria-label="Default select example">
+                                    <option selected>Select City</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <input class="city-input form-control" id="cityinput" type="text" placeholder="Enter city name"> -->
                     <button class="search-btn btn btn-success" id="add">Search</button>
                     <!-- <div class="separator"></div> -->
                     <!-- <button class="location-btn">Use Current Location</button> -->
@@ -34,9 +56,9 @@
             <div class="row">
                 <div class="col m-2">
                     <div class="img-fluid imagecontainer">
-                        <img src="./jose-g-ortega-castro-tS4Pl_8F3fY-unsplash.jpg" alt="poster" class="poster">
+                        <img src="./pexels-brett-sayles-1431822.jpg" alt="poster" class="poster">
                         <div class="bottom-left text-start p-2">
-                            <div style="color: white !important;">
+                            <div style="color: rgb(0, 0, 0) !important;">
                                 <h2 id="cityoutput">_______ ( ______ )</h2>
                                 <h6 id="temp">Temperature: __°C</h6>
                                 <h6 id="fl">Feels like : __°C</h6>
@@ -44,7 +66,7 @@
 
                             </div>
                         </div>
-                        <div class="top-right text-end p-2">
+                        <div class="top-right text-end p-2" style="color: rgb(0, 0, 0) !important;">
                             <p class="card-text" id="ti"></p>
                             <!-- <p class="card-text" id="dt"></p> -->
                         </div>
@@ -117,8 +139,8 @@
                         <div class="col-12 p-1 d-flex justify-content-center align-items-center">
                             <ul
                                 style="display: flex;list-style: none;flex-direction: column;padding: 5px 0px 0px 20px;align-content: center;justify-content: center;">
-                                <li style="display: flex; flex-direction: column; text-align: center;"> Current Time :<p style="color: skyblue;font-weight: bold;"
-                                        id="ctm"></p>
+                                <li style="display: flex; flex-direction: column; text-align: center;"> Current Time :<p
+                                        style="color: skyblue;font-weight: bold;" id="ctm"></p>
                                 </li>
                                 <li>
                                     <p style="color: skyblue;font-weight: bold;"></p>
@@ -137,12 +159,12 @@
                             </div>
                             <br>
                             <div class="row">
-                                <img src="./jose-g-ortega-castro-tS4Pl_8F3fY-unsplash.jpg" alt="chart"
+                                <img src="matt-dodd-jiw9ArlI3xE-unsplash.jpg" alt="chart"
                                     style="width: 100%;height: 258px;">
                             </div>
                             <br>
                             <DIV class="row text-center ">
-                                <ul class="weather-cards d-flex mobile" >
+                                <ul class="weather-cards d-flex mobile">
                                     <div class="col-sm-4 col-md">
                                         <li class="card ">
                                             <h3 id="nd1">( ______ )</h3>
@@ -200,6 +222,7 @@
     </div>
     <!-- <script src="script.js"></script> -->
     <script src="script1.js"></script>
+    <!-- <script src="new.js"></script> -->
 </body>
 
 </html>
