@@ -21,9 +21,8 @@
             <div class="container-fluid hd">
                 <a class="navbar-brand">RYAS.VN</a>
                 <div class="weather-input d-flex justify-content-evenly">
-
-                    <input class="city-input" id="cityinput" type="text" placeholder="Enter city name">
-                    <button class="search-btn" id="add">Search</button>
+                    <input class="city-input form-control" id="cityinput" type="text" placeholder="Enter city name">
+                    <button class="search-btn btn btn-success" id="add">Search</button>
                     <!-- <div class="separator"></div> -->
                     <!-- <button class="location-btn">Use Current Location</button> -->
                 </div>
@@ -59,7 +58,7 @@
                     <!-- 4 col inner row box-->
                     <div class="p-2 row border border-3 border-info rounded-5 m-2">
                         <!-- in row 6 one side box -->
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                             <!-- 1st datarow -->
                             <div class="row flex-nowrap">
                                 <div class="col ct"><i class="fa-solid fa-droplet"
@@ -87,7 +86,7 @@
                             </div>
                         </div>
                         <!-- inrow 6 second box -->
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                             <div class="row flex-nowrap">
                                 <div class="col ct"><i class="fa-solid fa-smog"
                                         style="color: skyblue;font-weight: bold;"></i></div>
@@ -118,7 +117,7 @@
                         <div class="col-12 p-1 d-flex justify-content-center align-items-center">
                             <ul
                                 style="display: flex;list-style: none;flex-direction: column;padding: 5px 0px 0px 20px;align-content: center;justify-content: center;">
-                                <li style="display: flex;"> Current Time :<p style="color: skyblue;font-weight: bold;"
+                                <li style="display: flex; flex-direction: column; text-align: center;"> Current Time :<p style="color: skyblue;font-weight: bold;"
                                         id="ctm"></p>
                                 </li>
                                 <li>
@@ -142,9 +141,9 @@
                                     style="width: 100%;height: 258px;">
                             </div>
                             <br>
-                            <DIV class="row text-center">
-                                <ul class="weather-cards d-flex">
-                                    <div class="col">
+                            <DIV class="row text-center ">
+                                <ul class="weather-cards d-flex mobile" >
+                                    <div class="col-sm-4 col-md">
                                         <li class="card ">
                                             <h3 id="nd1">( ______ )</h3>
                                             <h6 id="temp1">Temp: __C</h6>
@@ -152,7 +151,7 @@
                                             <h6 id="hum1">Humidity: __%</h6>
                                         </li>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-sm-4 col-md">
                                         <li class="card">
                                             <h3 id="nd2">( ______ )</h3>
                                             <h6 id="temp2">Temp: __C</h6>
@@ -161,7 +160,7 @@
                                         </li>
 
                                     </div>
-                                    <div class="col">
+                                    <div class="col-sm-4 col-md">
                                         <li class="card">
                                             <h3 id="nd3">( ______ )</h3>
                                             <h6 id="temp3">Temp: __C</h6>
@@ -170,7 +169,7 @@
                                         </li>
 
                                     </div>
-                                    <div class="col">
+                                    <div class="col-sm col-md">
                                         <li class="card">
                                             <h3 id="nd4">( ______ )</h3>
                                             <h6 id="temp4">Temp: __C</h6>
@@ -178,7 +177,7 @@
                                             <h6 id="hum4">Humidity: __%</h6>
                                         </li>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-sm col-md">
                                         <li class="card">
                                             <h3 id="nd5">( ______ )</h3>
                                             <h6 id="temp5">Temp: __C</h6>
@@ -198,21 +197,6 @@
 
         </div>
         <!-- end of main -->
-        <label for="country">Country:</label>
-        <select id="country">
-            <option value="">Select a country</option>
-        </select>
-
-        <label for="state">State:</label>
-        <select id="state">
-            <option value="">Select a state</option>
-        </select>
-
-        <label for="city">City:</label>
-        <select id="city">
-            <option value="">Select a city</option>
-        </select>
-
     </div>
     <!-- <script src="script.js"></script> -->
     <script src="script1.js"></script>
