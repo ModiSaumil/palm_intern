@@ -96,6 +96,8 @@
         flex-direction: column;
     }
 
-    
+    .MG{
+        margin: 2%;
+    }
 
 }

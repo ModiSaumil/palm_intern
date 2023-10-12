@@ -84,7 +84,10 @@ td {
 .btn{
     width: 50%;
     height: 30px;
-
+    border-radius: 15px;
+    background-color: #f4d69b;
+    border: none;
+    padding: 8px;
 }
 
 .td1 {
@@ -96,7 +99,16 @@ td {
     flex-wrap: nowrap;
 }
 
-#fErr,#lErr,#eErr,#pErr,#cErr,#aErr,#ctErr,#hbErr,#gdErr,#ppErr,#lkErr{
+.td3 {
+    font-size: larger;
+    display: flex;
+    width: 20%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#fErr,#lErr,#eErr,#pErr,#cErr,#aErr,#ctErr,#hbErr,#gdErr,#ppErr,#lkErr,#sErr{
     color: red;
     font-size: medium;
     font-weight: bold;

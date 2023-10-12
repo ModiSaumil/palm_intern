@@ -23,26 +23,29 @@
                 <div class="weather-input d-flex justify-content-evenly np">
                     <div class="select_option">
                         <div class="row np">
-                            <div class="col">
+                            <div class="col MG">
                                 <select class="form-select country" aria-label="Default select example"
                                     onchange="loadStates()">
                                     <option selected>Select Country</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <div class="col MG">
                                 <select class="form-select state" aria-label="Default select example"
                                     onchange="loadCities()">
                                     <option selected>Select State</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <div class="col MG">
                                 <select class="form-select city" id="cityinput" aria-label="Default select example">
                                     <option selected>Select City</option>
                                 </select>
                             </div>
+                            <div class="col MG">
+                                <button class="search-btn btn btn-success w-100" id="add">Search</button>
+                            </div>
                         </div>
                     </div>
-                    <button class="search-btn btn btn-success" id="add">Search</button>
+
                 </div>
             </div>
         </nav>

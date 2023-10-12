@@ -20,17 +20,50 @@ function formValidation() {
     var numbers = /^[6789][0-9]{9}$/;
     var passv = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
 
-    var fErr = lErr = eErr = pErr = cErr = aErr = ctErr = hbErr = gdErr = ppErr = lkErr = true;
+    var fErr = lErr = eErr = pErr = cErr = aErr = ctErr = hbErr = gdErr = ppErr = lkErr = sErr = true;
+
+    function printError(elemId, hintMsg) {
+        document.getElementById(elemId).innerHTML = hintMsg;
+    }
 
     if (fname == "" | lname == "" | emailid == "" | pass == "" | cnum == "" | address == "") {
-        alert("enter all details")
+        printError("sErr", "Please enter all Fields");
+        // alert("error")
+
+        if(fname == "" | fname == null){
+            printError("fErr", "Please enter your first name");
+        }
+        if (lname == "" | lname == null) {
+            printError("lErr", "Please enter your last name");
+        }
+        if (emailid == "" | emailid == null) {
+            printError("eErr", "Please enter emailid");
+        }
+        if (pass == "" | pass == null) {
+            printError("pErr", "Please enter password");
+        }
+        if (cnum == "" | cnum == null) {
+            printError("cErr", "Please enter contact number");
+        }
+        if (address == "" | address == null) {
+            printError("aErr", "Please enter address");
+        }
+        if (city.value == "") {
+            printError("ctErr", "Please select city from dropdown");
+        }
+        if (!s.checked && !n.checked && !o.checked) {
+            printError("gdErr", "Please select your gender");
+        }
+        if (!allowedExtensions.exec(filePath)) {
+            printError("ppErr", "Please select proper file type (.jpg,.png,.jpeg,.gif)");
+            fileInput.value = '';
+        }
+        if (gt == "" | gt == null) {
+            printError("lkErr", "Please enter url ex.http://www.abc.com ");
+        }
         return false;
     }
     else {
-
-        function printError(elemId, hintMsg) {
-            document.getElementById(elemId).innerHTML = hintMsg;
-        }
 
         if (fname == "" | fname == null) {
             printError("fErr", "Please enter your first name");
@@ -101,6 +134,7 @@ function formValidation() {
 
         if (address == "" | address == null) {
             printError("aErr", "Please enter address");
+
         } else {
             printError("aErr", " ");
         }
@@ -123,7 +157,7 @@ function formValidation() {
         }
 
         if (!allowedExtensions.exec(filePath)) {
-            printError("ppErr", "Please select proper file type");
+            printError("ppErr", "Please select proper file type (.jpg,.png,.jpeg,.gif)");
             fileInput.value = '';
             return false;
         } else {
@@ -131,7 +165,7 @@ function formValidation() {
         }
 
         if (gt == "" | gt == null) {
-            printError("lkErr", "Please enter url");
+            printError("lkErr", "Please enter url ex.http://www.abc.com ");
         } else {
             printError("lkErr", " ");
         }
