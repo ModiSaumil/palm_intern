@@ -48,39 +48,39 @@ document.getElementById('formval').addEventListener('submit', function formValid
     printValue("hid", fname)
     // single check hobby
     if (h1.checked) {
-        printValue("hid", "cricket")
+        printValue("hid", h1.value)
     }
     else if (h2.checked) {
-        printValue("hid", "online-games")
+        printValue("hid", h2.value)
     } else if (h3.checked) {
-        printValue("hid", "photograpy")
+        printValue("hid", h3.value)
     }
     // double check hobby
     if (h1.checked && h2.checked) {
-        printValue("hid", "cricket,online-game")
+        printValue("hid", [h1.value,h2.value])
     } else if (h1.checked && h3.checked) {
-        printValue("hid", "cricket,photography")
+        printValue("hid", [h1.value,h3.value])
     } else if (h2.checked && h3.checked) {
-        printValue("hid", "online games , photography ")
+        printValue("hid", [h2.value,h3.value])
     }
     // all check hobby
     if (h1.checked && h2.checked && h3.checked) {
-        printValue("hid", "cricket, online game, photography")
+        printValue("hid", [h1.value,h2.value,h3.value])
     }
     // gender check
     if (s.checked) {
-        printValue("gid", "male")
+        printValue("gid", s.value)
     }
     else if (n.checked) {
-        printValue("gid", "female")
+        printValue("gid", n.value)
     } else if (o.checked) {
-        printValue("gid", "other")
+        printValue("gid", o.value)
     }
     printValue("ppid", filePath)
     printValue("uid", gt)
 
 
-    if (fname == "" | lname == "" | emailid == "" | pass == "" | cnum == "" | address == "") {
+    if (fname == "" | lname == "" | emailid == "" | pass == "" | cnum == "" | address == "" ) {
         printError("sErr", "Please enter all Fields");
         // alert("error")
 
@@ -108,6 +108,9 @@ document.getElementById('formval').addEventListener('submit', function formValid
         if (!s.checked && !n.checked && !o.checked) {
             printError("gdErr", "Please select your gender");
         }
+        if (!h1.checked && !h2.checked && !h3.checked){
+            printError("hbErr", "please select any one hobby")
+        }
         if (!allowedExtensions.exec(filePath)) {
             printError("ppErr", "Please select proper file type (.jpg,.png,.jpeg,.gif)");
             fileInput.value = '';
@@ -118,6 +121,7 @@ document.getElementById('formval').addEventListener('submit', function formValid
         return false;
     }
     else {
+        printError("sErr", "");
 
         if (fname == "" | fname == null) {
             printError("fErr", "Please enter your first name");
@@ -200,6 +204,13 @@ document.getElementById('formval').addEventListener('submit', function formValid
         }
         else {
             printError("ctErr", " ");
+        }
+
+        if (!h1.checked && !h2.checked && !h3.checked){
+            printError("hbErr", "please select any one hobby")
+            return false;
+        }else{
+            printError("hbErr","");
         }
 
         if (!s.checked && !n.checked && !o.checked) {
