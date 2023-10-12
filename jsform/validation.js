@@ -1,4 +1,7 @@
-function formValidation() {
+document.getElementById('formval').addEventListener('submit', function formValidation(e) {
+
+    e.preventDefault();
+
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
     var emailid = document.getElementById("emailid").value;
@@ -6,6 +9,9 @@ function formValidation() {
     var pass = document.getElementById("pass").value;
     var address = document.getElementById("address").value;
     var city = document.getElementById("ddcity").value;
+    var h1 = document.getElementById("cricket");
+    var h2 = document.getElementById("online-games");
+    var h3 = document.getElementById("photography");
     var s = document.getElementById("male");
     var n = document.getElementById("female");
     var o = document.getElementById("other");
@@ -21,16 +27,64 @@ function formValidation() {
     var passv = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
 
     var fErr = lErr = eErr = pErr = cErr = aErr = ctErr = hbErr = gdErr = ppErr = lkErr = sErr = true;
+    var fid = lid = cid = eid = pid = aid = ctid = hid = gid = ppid = uid = true;
+
+
 
     function printError(elemId, hintMsg) {
         document.getElementById(elemId).innerHTML = hintMsg;
     }
 
+    function printValue(elemId, hintMsg) {
+        document.getElementById(elemId).innerHTML = hintMsg;
+    }
+    printValue("fid", fname)
+    printValue("lid", lname)
+    printValue("cid", cnum)
+    printValue("eid", emailid)
+    printValue("pid", pass)
+    printValue("aid", address)
+    printValue("ctid", city)
+    printValue("hid", fname)
+    // single check hobby
+    if (h1.checked) {
+        printValue("hid", "cricket")
+    }
+    else if (h2.checked) {
+        printValue("hid", "online-games")
+    } else if (h3.checked) {
+        printValue("hid", "photograpy")
+    }
+    // double check hobby
+    if (h1.checked && h2.checked) {
+        printValue("hid", "cricket,online-game")
+    } else if (h1.checked && h3.checked) {
+        printValue("hid", "cricket,photography")
+    } else if (h2.checked && h3.checked) {
+        printValue("hid", "online games , photography ")
+    }
+    // all check hobby
+    if (h1.checked && h2.checked && h3.checked) {
+        printValue("hid", "cricket, online game, photography")
+    }
+    // gender check
+    if (s.checked) {
+        printValue("gid", "male")
+    }
+    else if (n.checked) {
+        printValue("gid", "female")
+    } else if (o.checked) {
+        printValue("gid", "other")
+    }
+    printValue("ppid", filePath)
+    printValue("uid", gt)
+
+
     if (fname == "" | lname == "" | emailid == "" | pass == "" | cnum == "" | address == "") {
         printError("sErr", "Please enter all Fields");
         // alert("error")
 
-        if(fname == "" | fname == null){
+        if (fname == "" | fname == null) {
             printError("fErr", "Please enter your first name");
         }
         if (lname == "" | lname == null) {
@@ -172,3 +226,8 @@ function formValidation() {
 
     }
 }
+)
+
+
+
+
