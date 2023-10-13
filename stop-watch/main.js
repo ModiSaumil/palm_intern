@@ -8,6 +8,7 @@ var min = 0;
 var sec = 0;
 var ms = 0;
 var lapcurr = null
+var count = 1;
 
 startbtn.addEventListener('click', function () {
     timer = true;
@@ -23,7 +24,8 @@ stopbtn.addEventListener('click', function () {
 resetbtn.addEventListener('click', function () {
     console.log('reset clicked');
     timer = false;
-    hr = min = sec = ms = 0;
+    hr = min = sec = ms = bt = 0;
+    count = 1;
     console.warn(hr, min, sec, ms);
     document.getElementById('hr').innerHTML = "00";
     document.getElementById('min').innerHTML = "00";
@@ -33,9 +35,10 @@ resetbtn.addEventListener('click', function () {
 });
 
 lapbtn.addEventListener('click', function(){
+    bt = count++;
     console.log('Lap button pressed');
     lapcurr = ` ${hr} : ${min} : ${sec} : ${ms}`;
-    document.getElementById('laprecord').innerHTML += `<br>` +lapcurr;
+    document.getElementById('laprecord').innerHTML += (bt + `&emsp;&emsp;` + lapcurr + `</br>`);
 });
 
 function stopwatch() {

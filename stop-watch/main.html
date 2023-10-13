@@ -13,6 +13,14 @@
     <title>Saumil modi</title>
 </head>
 
+<style>
+    @media screen and (max-width:425px){
+        .mg{
+            margin-top: 3% !important;
+        }
+    }
+</style>
+
 <body class="bg-body-secondary">
     <div class="container ">
         <div class="row p-3 d-flex flex-row">
@@ -34,13 +42,13 @@
         <div class="row p-3">
             <div class="col-md-3 col-6"><button class="btn btn-success w-100" id="start">Start</button></div>
             <div class="col-md-3 col-6"><button class="btn btn-danger w-100" id="stop">Stop</button></div>
-            <div class="col-md-3 col-6"><button class="btn btn-primary w-100" id="reset">Reset</button></div>
-            <div class="col-md-3 col-6"><button class="btn btn-secondary w-100" id="lap">Lap</button></div>
+            <div class="col-md-3 mg col-6"><button class="btn btn-primary w-100" id="reset">Reset</button></div>
+            <div class="col-md-3 mg col-6"><button class="btn btn-secondary w-100" id="lap">Lap</button></div>
         </div>
-        <div class="row p-3">
+        <div class="row p-3 bg-secondary bg-opacity-25">
             <div class="col d-flex align-items-center flex-column flex-nowrap">
                 <div class="fs-2">Lap timer</div>
-                <div id="laprecord"></div>
+                <div id="laprecord" class="fs-4"></div>
             </div>
         </div>
     </div>
