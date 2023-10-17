@@ -1,4 +1,10 @@
 // 2 chnage number in array
+// Given an array of integers, replace all the occurrences of elemToReplace with substitutionElem
+// Example
+// For inputArray = [1, 2, 1], elentoReplace = 1,
+// and substitutionElem 3, the output should be arrayReplace(inputArray, elemToReplace,
+// substitutionElem)= [3, 2, 3].
+
 
 let inputarry = [1, 2, 1];
 let repnum = 1;
