@@ -1,18 +1,12 @@
 // 10
 
-// let inputarray = 
-// let newarr = []
+// tree sorting
 
-// for (let i = 0; i < inputarray.length; i++) {
-//     if (inputarray[i] === -1) {
-//         console.log("-1 found at index: " + i);
+// Some people are standing in a row in a park.
+// There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!
+// Example
+// For a [-1, 150, 190, 170, -1, -1, 160, 180], the output should be sortByHeight (a) [-1, 150, 160, 170, -1, -1, 180, 190].
 
-//     } else {
-//         console.log(inputarray[i]);
-//         continue;
-
-//     }
-// }
 
 const inputArry = [-1, 150, 190, 170, -1, -1, 160, 180];
 
