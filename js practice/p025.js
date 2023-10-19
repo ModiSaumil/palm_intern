@@ -15,3 +15,43 @@
 
 // Output: 1
 // <image2>
+
+const e1 = [
+    [0, 1],
+    [1, 2],
+    [3, 4]
+];
+const e2 = [
+    [0, 1],
+    [1, 2],
+    [2, 3],
+    [3, 4]
+];
+
+let n = 5;
+function count(arr) {
+    let temp;
+    let c = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        // debugger
+        for (let j = 0; j < arr[i].length; j++) {
+            if (i === 0 && j === 0) {
+                c++;
+            }
+            else {
+                if (j === 0 && temp !== arr[i][j]) {
+                    c++
+                }
+            }
+            temp = arr[i][j];
+        }
+    }
+    return c;
+}
+let count_e1 = count(e1);
+console.log(count_e1);
+
+let count_e2 = count(e2);
+console.log(count_e2);
+

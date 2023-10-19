@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minesweeper</title>
+  <style>
+    .board {
+      display: grid;
+      grid-template-columns: repeat(9, 30px);
+    }
+    .cell {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #000;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="board" id="board"></div>
+  <script>
+    const board = document.getElementById('board');
+    const rows = 9;
+    const cols = 9;
+    const numMines = 10;
+    let cells = [];
+
+    function createBoard() {
+      for (let i = 0; i < rows; i++) {
+        cells[i] = [];
+        for (let j = 0; j < cols; j++) {
+          const cell = document.createElement('div');
+          cell.classList.add('cell');
+          cell.dataset.row = i;
+          cell.dataset.col = j;
+          cell.isMine = false;
+          cell.isRevealed = false;
+          cell.innerHTML = '';
+          board.appendChild(cell);
+          cells[i][j] = cell;
+          cell.addEventListener('click', handleCellClick);
+        }
+      }
+
+      // Place mines randomly
+      let minesPlaced = 0;
+      while (minesPlaced < numMines) {
+        const randomRow = Math.floor(Math.random() * rows);
+        const randomCol = Math.floor(Math.random() * cols);
+        if (!cells[randomRow][randomCol].isMine) {
+          cells[randomRow][randomCol].isMine = true;
+          minesPlaced++;
+        }
+      }
+    }
+
+    function handleCellClick(event) {
+      const cell = event.target;
+      const row = parseInt(cell.dataset.row);
+      const col = parseInt(cell.dataset.col);
+
+      if (cell.isRevealed || cell.isMine) return;
+
+      if (cell.isMine) {
+        // Game over
+        cell.style.backgroundColor = 'red';
+        revealMines();
+        alert('Game Over');
+      } else {
+        const mineCount = countAdjacentMines(row, col);
+        cell.isRevealed = true;
+        cell.innerHTML = mineCount > 0 ? mineCount : '';
+        cell.style.backgroundColor = 'lightgray';
+
+        if (mineCount === 0) {
+          // Auto-reveal adjacent cells
+          for (let i = row - 1; i <= row + 1; i++) {
+            for (let j = col - 1; j <= col + 1; j++) {
+              if (i >= 0 && i < rows && j >= 0 && j < cols) {
+                handleCellClick({ target: cells[i][j] });
+              }
+            }
+          }
+        }
+      }
+    }
+
+    function countAdjacentMines(row, col) {
+      let count = 0;
+      for (let i = row - 1; i <= row + 1; i++) {
+        for (let j = col - 1; j <= col + 1; j++) {
+          if (i >= 0 && i < rows && j >= 0 && j < cols && cells[i][j].isMine) {
+            count++;
+          }
+        }
+      }
+      return count;
+    }
+
+    function revealMines() {
+      for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+          if (cells[i][j].isMine) {
+            cells[i][j].style.backgroundColor = 'red';
+          }
+        }
+      }
+    }
+
+    createBoard();
+  </script>
+</body>
+</html>
