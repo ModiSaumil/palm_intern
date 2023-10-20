@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffin Eatz</title>
+    <link rel="icon" type="image/x-icon" href="./Images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    .bt {
+        bottom: 1%;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-xl bg-black bg-opacity-50 fixed-top ">
+        <img src="./images/logo.png" class="img-fluid p-lg-3 p-md-1 p-sm-0 p-0" style="height: 8%;width: 8%;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon " style="color: white;"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-evenly flex-grow-1 pe-3 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Find Kitchen</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Register Your Kitchen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-white">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-white">Sign In <i
+                                class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="card text-bg-dark">
+            <img src="./images/banner-img.jpg" class="card-img" alt="...">
+
+            <div
+                class="card-img-overlay container d-flex align-items-start flex-column justify-content-center align-content-start ms-xl-5">
+                <h1 class="card-title fw-bold">Find Fresh ,Authentic And</h1>
+                <h1 class="card-title fw-bold">Homemade Food Near You</h1>
+
+                <h4 class="card-text">We Aim To Connect Local, Home-Based</h4>
+                <h4 class="card-text">Food Businesses With Customers.</h4>
+                <div class="input-group mb-3 w-50">
+                    <input type="text" class="form-control p-4" placeholder="Enter our Location.."
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" style="background-color: orange;border: none;"
+                        type="button" id="button-addon2">Update Location</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center ">
+        <div class="d-flex position-absolute justify-content-evenly bt w-100 ">
+            <div class="card text-bg-dark mb-3 m-3 p-2 col-xl-3" style="height: 250px;" >
+                <div class="card-title fs-6" style="color: orange;"><i class="fa-solid fa-location-dot"></i>   STEP 1</div>
+                <div class="card-text fs-3 fw-bold">Explore Kitchen</div>
+                <div class="card-body">
+                    <p class="card-text">Choose delicious, homemade meals, snacks, baked goods and more.</p>
+                </div>
+            </div>
+            <div class="card text-bg-dark mb-3 m-3 p-2 col-xl-3">
+                <div class="card-title fs-6" style="color: orange;"><i class="fa-solid fa-calendar-days"></i>   STEP 2</div>
+                <div class="card-text fs-3 fw-bold">Choose Your Date And Dishes</div>
+                <div class="card-body">
+                    <p class="card-text">Kitchens require 48 hrs of minimum time to ensure they can fullfill the order.
+                    </p>
+                </div>
+            </div>
+            <div class="card text-bg-dark mb-3 m-3 p-2 col-xl-3">
+                <div class="card-title fs-6" style="color: orange;"><i class="fa-solid fa-drumstick-bite"></i>   STEP 3</div>
+                <div class="card-text fs-3 fw-bold">Submit Your Order</div>
+                <div class="card-body">
+                    <p class="card-text">Order for pickup/Delivery and enjoy!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex">
+            Near You
+        </div>
+        <div>
+            <h1>Kitchens Near You</h1>
+        </div>
+        <div>
+            <p>Check out some of our best kitchens.</p>
+        </div>
+        
+    </div>
+</body>
+
+</html>
