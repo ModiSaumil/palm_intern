@@ -63,18 +63,46 @@
 
     @media screen and (max-width:2560px) {
         .bt {
-            margin-top: 330px !important;
+            margin-top: 170px !important;
         }
 
         .mrg {
             margin-top: 11% !important;
         }
+
+        .fst {
+            font-size: 470%;
+        }
+
+        .mst {
+            font-size: x-large;
+        }
+
+    }
+
+    @media screen and (max-width:1920px) {
+        .bt {
+            margin-top: 0px !important;
+        }
+
+        .fst {
+            font-size: 300%;
+        }
+
     }
 
     @media screen and (max-width:1440px) {
 
         .bt {
             margin-top: 120px !important;
+        }
+
+        .fst {
+            font-size: 250%;
+        }
+
+        .mst {
+            font-size: larger;
         }
 
     }
@@ -86,10 +114,24 @@
             margin-top: 110px !important;
         }
 
+        .fst {
+            font-size: 250%;
+        }
+
+        .mst {
+            font-size: larger;
+        }
+
     }
 
 
     @media screen and (max-width:768px) {
+
+        .steps {
+            display: flex;
+            justify-content: center;
+        }
+
         .pad-top-10 {
             padding-top: 35%;
         }
@@ -103,15 +145,24 @@
         }
 
         .bt {
-            margin-top: 110px !important;
+            margin-top: 0px !important;
         }
 
         .ud {
             width: 75%;
         }
+
+        .mst {
+            font-size: larger;
+        }
     }
 
     @media screen and (max-width:425px) {
+
+        .steps {
+            display: block;
+        }
+
         .card {
             max-width: 25rem !important;
         }
@@ -136,7 +187,6 @@
         .ud {
             width: 100%;
         }
-
     }
 
     @media screen and (max-width:425px) {
@@ -150,8 +200,6 @@
         }
     }
 
-
-
     .bg3 {
         background-image: url('./images/footer-bg.jpg') !important;
     }
@@ -160,8 +208,6 @@
         position: relative;
         /* padding: 75px 0; */
     }
-
-
 
     .fixed-bg {
         position: absolute;
@@ -198,6 +244,44 @@
     .bt {
         margin-top: 170px;
         margin-bottom: 50px;
+    }
+
+
+
+    .btnhover {
+        /* width: 200px; */
+        /* font-size: 16px; */
+        /* font-weight: 600; */
+        color: #fff;
+        cursor: pointer;
+        /* margin: 20px; */
+        /* height: 55px; */
+        text-align: center;
+        border: none;
+        background-size: 300% 100%;
+
+        /* border-radius: 50px; */
+        -moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .btnhover:hover {
+        background-position: 100% 0;
+        -moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .btnhover:focus {
+        outline: none;
+    }
+
+    .btnhover.color-4 {
+        background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+        box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
     }
 </style>
 
@@ -258,8 +342,9 @@
             <div class="input-group mb-3 ud">
                 <input type="text" class="form-control p-4" placeholder="Enter our Location.."
                     aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" style="background-color: orange;border: none;" type="button"
-                    id="button-addon2">Update Location</button>
+                <button class="btn btn-outline-secondary btnhover color-4"
+                    style="background-color: orange;border: none;" type="button" id="button-addon2">Update
+                    Location</button>
             </div>
         </div>
     </div>
@@ -267,8 +352,8 @@
     <!--3 region card  -->
     <div class="container mrg">
         <div class="row mt-5 d-flex ">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
+            <div class="col-12 col-md-6 col-lg-4 steps">
+                <div class="card text-white bg-dark mb-3 " style="height: 14rem;max-width: 20rem;">
                     <div class="card-header text-warning"> <i class="fa-solid fa-location-dot"></i> STEP 1</div>
                     <div class="card-body">
                         <h5 class="card-title">Explore Kitchen</h5> <br>
@@ -276,7 +361,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 steps">
                 <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
                     <div class="card-header text-warning"><i class="fa-regular fa-calendar-days"></i> STEP 2</div>
                     <div class="card-body">
@@ -286,7 +371,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 steps">
                 <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
                     <div class="card-header text-warning"><i class="fa-solid fa-drumstick-bite"></i> STEP 3</div>
                     <div class="card-body">
@@ -677,7 +762,7 @@
         <img src="./images/bg2.jpg" alt="banner-2" class="img-bg og" style="object-fit: cover;">
         <div class="container my-5" style="position: relative;">
             <div class="col-12 col-md-7 col-lg-6 col-xl-5">
-                <h1 class=" fw-bold text-white" style="font-size:470%"> Make Orders <br>
+                <h1 class=" fw-bold text-white fst"> Make Orders <br>
                     <span>
                         With Our
                     </span><br>
@@ -689,8 +774,9 @@
                     <i class="fa-regular fa-circle-check text-warning"></i>
                 </div>
                 <div class="col-11 col-md-6 col-lg-6 col-xl-5 text-white">
-                    <h4 style="font-size: x-large;">Order and pay in few minutes.</h4>
-                    <h6 class="text-start col-10" style="font-size: x-large;">Choose food and pay for the order in a couple of clicks online also
+                    <h4 class="mst">Order and pay in few minutes.</h4>
+                    <h6 class="text-start col-10 mst">Choose food and pay for the order in a couple of clicks online
+                        also
                         choose you current
                         location using GPS.</h6>
                 </div>
@@ -700,8 +786,9 @@
                     <i class="fa-regular fa-circle-check text-warning"></i>
                 </div>
                 <div class="col-11 col-md-6 col-lg-6 col-xl-5 text-white">
-                    <h4 style="font-size: x-large;">Check Delivery Status.</h4>
-                    <h6 class="text-start col-10" style="font-size: x-large;">Choose food and pay for the order in a couple of clicks online also
+                    <h4 class="mst">Check Delivery Status.</h4>
+                    <h6 class="text-start col-10 mst">Choose food and pay for the order in a couple of clicks online
+                        also
                         choose you current
                         location using GPS.</h6>
                 </div>
