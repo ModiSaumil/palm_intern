@@ -66,20 +66,27 @@
 
     @media screen and (max-width:2560px) {
         .bt {
-            margin-top: 170px !important;
+            margin-top: 220px !important;
         }
 
         .mrg {
-            margin-top: 11% !important;
+            margin-top: 13% !important;
         }
 
         .fst {
-            font-size: 470%;
+            font-size: 88px;
         }
 
         .mst {
-            font-size: x-large;
+            font-size: xx-large;
         }
+
+        .wd{
+            height: 100%;
+            width: 100%;
+        }
+        
+        
 
     }
 
@@ -89,9 +96,38 @@
         }
 
         .fst {
-            font-size: 300%;
+            font-size: 64px;
         }
 
+        .wd{
+            height: auto;
+            width: 70%;
+        }
+
+        .ms{
+            height: auto;
+            width: auto;
+        }
+
+        .mrg{
+            margin-top: 11% !important;
+        }
+
+    }
+
+    @media screen and (max-width:1880px){
+        .fst{
+            font-size: 62px;
+        }
+
+        .mrg{
+            margin-top: 10% !important;
+        }
+
+        .bt{
+            margin-top: 100px !important;
+        }
+        
     }
 
     @media screen and (max-width:1440px) {
@@ -101,11 +137,15 @@
         }
 
         .fst {
-            font-size: 250%;
+            font-size: 73px;
         }
 
         .mst {
-            font-size: larger;
+            font-size: x-large;
+        }
+
+        .mrg{
+            margin-top: 11% !important;
         }
 
     }
@@ -118,11 +158,15 @@
         }
 
         .fst {
-            font-size: 250%;
+            font-size: 64px;
         }
 
         .mst {
-            font-size: larger;
+            font-size: x-large;
+        }
+
+        .mrg{
+            margin-top: 12% !important;
         }
 
     }
@@ -156,11 +200,20 @@
         }
 
         .mst {
-            font-size: larger;
+            font-size: x-large;
+        }
+
+        .mrg{
+            margin-top: 14% !important;
         }
     }
 
     @media screen and (max-width:425px) {
+
+
+        .mrg{
+            margin-top: 28% !important;
+        }
 
         .steps {
             display: block;
@@ -190,16 +243,43 @@
         .ud {
             width: 100%;
         }
-    }
 
-    @media screen and (max-width:425px) {
+        .mst {
+            font-size: larger;
+        }
 
+        .bt{
+            margin-top: 100px !important;
+        }
         .pad-top-10 {
             padding-top: 45% !important;
         }
 
         footer .bottom-footer .find-us .social-links-text ul {
             padding: 0px 0px 0px 0px !important;
+        }
+
+        .fst{
+            font-size: 60px;
+        }
+    }
+
+    @media screen and (max-width:375px) {
+
+        .mst{
+            font-size: large;
+        }
+        .fst{
+            font-size: 60px;
+        }
+        .bt{
+            margin-top: 0px !important;
+        }
+    }
+
+    @media screen and (max-width:325px){
+        .fst{
+            font-size: 50px;
         }
     }
 
@@ -307,26 +387,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link text-white" aria-current="page" href="#">Find Kitchens</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link text-white" aria-current="page" href="#">About Us</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link text-white" aria-current="page" href="#">Contact Us</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link text-white" aria-current="page" href="#">Register Your Kitchen</a>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <a class="nav-link text-white"> <i class="fa-solid fa-basket-shopping"></i>
+                        <a class="nav-link text-white me-xl-5 ms-xl-5 ms-lg-3 me-lg-3"> <i class="fa-solid fa-basket-shopping"></i>
                         </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a class="nav-link text-white">Sign In <i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a class="nav-link text-white me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">Sign In <i class="fa-solid fa-right-to-bracket"></i></a>
                     </form>
                 </div>
             </div>
@@ -375,7 +455,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 steps">
-                <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
+                <div class="card text-white bg-dark mb-3 w-100" style="height: 14rem;max-width: 20rem;">
                     <div class="card-header text-warning"><i class="fa-solid fa-drumstick-bite"></i> STEP 3</div>
                     <div class="card-body">
                         <h5 class="card-title">Submite Your Order</h5><br>
@@ -387,6 +467,7 @@
             </div>
         </div>
     </div>
+
     <!-- featured -->
     <section style="display: block;">
         <div class="container mt-5">
@@ -660,8 +741,8 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row mt-5">
-                            <div class="col-sm-2 col-12"></div>
-                            <div class="col-sm-10 col-12 text-center">
+                            <div class="col-md-2 col-12"></div>
+                            <div class="col-md-10 col-12 text-center">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10">
                                         <p>
@@ -681,8 +762,8 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row mt-5">
-                            <div class="col-2"></div>
-                            <div class="col-10 text-center">
+                            <div class="col-md-2 col-12"></div>
+                            <div class="col-md-10 col-12 text-center">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10">
                                         <p>
@@ -702,8 +783,8 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row mt-5">
-                            <div class="col-2"></div>
-                            <div class="col-10 text-center">
+                            <div class="col-md-2 col-12"></div>
+                            <div class="col-md-10 col-12 text-center">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10">
                                         <p>
@@ -723,8 +804,8 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row mt-5">
-                            <div class="col-2"></div>
-                            <div class="col-10 text-center">
+                            <div class="col-md-2 col-12"></div>
+                            <div class="col-md-10 col-12 text-center">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10">
                                         <p>
@@ -743,18 +824,18 @@
                         </div>
                     </div>
                 </div> 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                <button class="carousel-control-prev mt-5" type="button" data-bs-target="#carouselExampleInterval"
                     data-bs-slide="prev">
                     <!-- <span class="carousel-control-prev-icon text-dark d-none" aria-hidden="false"></span> -->
                     <span class=" text-danger">
-                        <i class="fa-solid fa-circle-arrow-left fs-1" style="color: #5f86c8;"></i>
+                        <i class="fa-solid fa-circle-arrow-left fs-1" style="color: #7c98c7;"></i>
                     </span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                <button class="carousel-control-next mt-5" type="button" data-bs-target="#carouselExampleInterval"
                     data-bs-slide="next">
                     <!-- <span class="carousel-control-next-icon text-dark d-none" aria-hidden="flase"></span> -->
                     <span class=" text-danger">
-                        <i class="fa-solid fa-circle-arrow-right fs-1" style="color: #5f86c8;"></i>
+                        <i class="fa-solid fa-circle-arrow-right fs-1" style="color: #7c98c7;"></i>
                     </span>
                 </button>
             </div>
@@ -763,19 +844,19 @@
 
     <!-- newbanner -->
     <div class="col-12">
-        <img src="./images/bg2.jpg" alt="banner-2" class="img-bg og" style="object-fit: cover;">
+        <img src="./images/bg2.jpg" alt="banner-2" class="img-bg og" style="object-fit: cover; height: 90%;width: 100%;">
         <div class="container my-5" style="position: relative;">
             <div class="col-12 col-md-7 col-lg-6 col-xl-5">
-                <h1 class=" fw-bold text-white fst"> Make Orders <br>
+                <p class=" fw-bold text-white fst"> Make Orders
                     <span>
                         With Our
-                    </span><br>
+                    </span>
                     <span class="text-warning">Application</span>
-                </h1>
+                </p>
             </div>
             <div class="row my-4">
                 <div class="col-1 text-end">
-                    <i class="fa-regular fa-circle-check text-warning"></i>
+                    <i class="fa-regular fa-circle-check text-warning mst"></i>
                 </div>
                 <div class="col-11 col-md-6 col-lg-6 col-xl-5 text-white">
                     <h4 class="mst">Order and pay in few minutes.</h4>
@@ -787,7 +868,7 @@
             </div>
             <div class="row ">
                 <div class="col-1 text-end">
-                    <i class="fa-regular fa-circle-check text-warning"></i>
+                    <i class="fa-regular fa-circle-check text-warning mst"></i>
                 </div>
                 <div class="col-11 col-md-6 col-lg-6 col-xl-5 text-white">
                     <h4 class="mst">Check Delivery Status.</h4>
@@ -798,11 +879,11 @@
                 </div>
             </div>
             <div class="row my-2">
-                <div class="col-12 col-md-4 col-lg-3">
-                    <img src="images/playstore_btn.png" alt="playstore_btn">
+                <div class="col-12 col-md-4 col-lg-3 mt-xl-4 ">
+                    <img src="images/playstore_btn.png" alt="playstore_btn" class="wd ms">
                 </div>
-                <div class="col-12 col-md-8 col-lg-3">
-                    <img src="images/apple_btn.png" alt="playstore_btn">
+                <div class="col-12 col-md-8 col-lg-3 mt-xl-4">
+                    <img src="images/apple_btn.png" alt="playstore_btn" class="wd ms">
                 </div>
             </div>
 
